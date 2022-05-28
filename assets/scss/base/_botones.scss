@@ -1,0 +1,16 @@
+.boton-rojo {
+    @include boton($rojo, inline-block);
+}
+
+.boton-rojo-block {
+    @include boton($rojo, block);
+    margin: 1rem auto;
+}
+
+.boton-azul {
+    @include boton($azul, inline-block);
+}
+.boton-azul-block {
+    @include boton($azul, block);
+}
+

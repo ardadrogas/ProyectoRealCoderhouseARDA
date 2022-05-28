@@ -1,0 +1,74 @@
+.hero {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.7rem;
+
+    height: 116rem;
+
+    color: $blanco;
+
+    & .background-img {
+
+        position: absolute;
+        background-image: url('/assets/images/todesarda.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        filter: brightness(20%);
+
+    }
+
+    &__titulo {
+
+        font-weight: $bold;
+        margin: 0px 20rem;
+
+        & span {
+
+            position: relative;
+
+            &:before {
+
+                position: absolute;
+                bottom: 0;
+                left: -10px;
+                right: -10px;
+                display: block;
+                height: 4rem;
+                content: "";
+                background-color: $rojo;
+                opacity: 65%;
+
+                z-index: -1;
+
+            }
+
+
+        }
+
+
+    }
+
+    &__subtitulo {
+
+        font-size: 6.4rem;
+        margin: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    &__btn {
+
+        font-size: 4rem;
+
+    }
+
+}

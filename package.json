@@ -1,0 +1,17 @@
+{
+  "name": "arda",
+  "version": "1.0.0",
+  "description": "asociacion de reduccion de daños de argentina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/app.scss assets/css/stylesheet.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "CoderHouse Students (Jeyther Yriza, Guillermo Dejo, Estefania Jimenez)",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

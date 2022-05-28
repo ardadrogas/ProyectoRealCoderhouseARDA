@@ -1,0 +1,54 @@
+.header{
+    
+    position: sticky;
+    background-color: $blanco;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 7rem;
+
+    top: 0px;
+    z-index: 10;
+
+
+    &__container-logo{
+
+        width: 38rem;
+
+    }
+
+    &__container-menu{
+
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+        margin-top: 3rem;
+
+    }
+
+    &__link{
+
+        display: flex;
+        align-items: center;
+        font-size: 2.4rem;
+        font-weight: $bold;
+        gap: .4rem;
+
+        & span{
+
+            transform: rotate(90deg);
+            font-size: 3rem;
+
+        }
+        
+    }
+
+
+}
+.btn-donar{
+
+    position: absolute;
+    top: 0px;
+    right: 7rem;
+
+}
