@@ -336,12 +336,12 @@ picture {
 
 h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
-  margin: calc($separacion / 2) 0;
+  margin: 0;
   font-weight: 300;
   text-align: center; }
 
 h1 {
-  font-size: 9.6rem; }
+  font-size: 3.8rem; }
 
 h2 {
   font-size: 3.4rem; }
@@ -429,70 +429,119 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 7rem;
+  padding: 2rem;
+  height: 120px;
   top: 0px;
   z-index: 10; }
-  .header__container-logo {
-    width: 38rem; }
+  @media (min-width: 1024px) {
+    .header {
+      padding: 2rem 5rem; } }
+  .header .container-logo {
+    width: 24rem;
+    align-self: center; }
   .header__container-menu {
-    display: flex;
+    display: none;
+    flex-direction: column;
     align-items: center;
-    gap: 6rem;
-    margin-top: 3rem; }
+    gap: 4rem; }
+    @media (min-width: 1024px) {
+      .header__container-menu {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4rem; } }
   .header__link {
     display: flex;
     align-items: center;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     gap: .4rem; }
     .header__link span {
       transform: rotate(90deg);
-      font-size: 3rem; }
+      font-size: 1.6rem; }
+  .header__boton {
+    display: block;
+    font-size: 5rem; }
+    @media (min-width: 1024px) {
+      .header__boton {
+        display: none; } }
 
 .btn-donar {
   position: absolute;
   top: 0px;
-  right: 7rem; }
+  right: 5rem; }
 
 .hero {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 6.7rem;
-  height: 116rem;
+  justify-content: space-between;
+  padding: 5rem;
+  height: calc(100vh - 12rem);
   color: #FFFFFF; }
+  @media (min-width: 1024px) {
+    .hero {
+      padding: 5% 10%; } }
   .hero .background-img {
     position: absolute;
     background-image: url("/assets/images/todesarda.png");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 100%;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
     z-index: -1;
-    filter: brightness(20%); }
+    filter: brightness(20%) saturate(0%); }
   .hero__titulo {
+    font-size: 4rem;
     font-weight: 700;
-    margin: 0px 20rem; }
+    line-height: initial; }
+    @media (min-width: 768px) {
+      .hero__titulo {
+        font-size: 7.2rem;
+        width: auto; } }
+    @media (min-width: 1024px) {
+      .hero__titulo {
+        font-size: 8vh; } }
     .hero__titulo span {
-      position: relative; }
-      .hero__titulo span:before {
-        position: absolute;
-        bottom: 0;
-        left: -10px;
-        right: -10px;
-        display: block;
-        height: 4rem;
-        content: "";
-        background-color: #CE0000;
-        opacity: 65%;
-        z-index: -1; }
+      position: relative;
+      background-image: linear-gradient(rgba(206, 0, 0, 0.65), rgba(206, 0, 0, 0.65));
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 3rem;
+      animation-name: linea-mobile;
+      animation-duration: 3s;
+      animation-iteration-count: 1; }
+      @media (min-width: 768px) {
+        .hero__titulo span {
+          animation-name: linea;
+          background-size: 100% 3rem; } }
   .hero__subtitulo {
-    font-size: 6.4rem;
-    margin: 0rem;
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 0;
     margin-bottom: 3rem; }
+    @media (min-width: 768px) {
+      .hero__subtitulo {
+        font-size: 4.2rem; } }
+    @media (min-width: 1024px) {
+      .hero__subtitulo {
+        font-size: 5vh; } }
   .hero__btn {
-    font-size: 4rem; }
+    font-size: 2.4rem; }
+    @media (min-width: 1024px) {
+      .hero__btn {
+        font-size: 3rem; } }
+
+@keyframes linea-mobile {
+  0% {
+    background-size: 0% 2rem; }
+  100% {
+    background-size: 100% 2rem; } }
+
+@keyframes linea {
+  0% {
+    background-size: 0% 4rem; }
+  100% {
+    background-size: 100% 4rem; } }

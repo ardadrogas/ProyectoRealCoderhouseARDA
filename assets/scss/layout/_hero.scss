@@ -4,12 +4,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 6.7rem;
+    justify-content: space-between;
+    padding: 5rem;
 
-    height: 116rem;
+    height: calc(100vh - 12rem);
 
     color: $blanco;
+
+    @include desktop {
+        padding: 5% 10%;
+    }
 
     & .background-img {
 
@@ -17,41 +21,49 @@
         background-image: url('/assets/images/todesarda.png');
         background-size: cover;
         background-position: center;
-        width: 100%;
-        height: 100%;
         top: 0;
+        right: 0;
+        bottom: 0;
         left: 0;
         z-index: -1;
 
-        filter: brightness(20%);
+        filter: brightness(20%) saturate(0%);
 
     }
 
     &__titulo {
 
+        font-size: 4rem;
         font-weight: $bold;
-        margin: 0px 20rem;
+        line-height: initial;
+
+        @include tablet {
+            font-size: 7.2rem;
+            width: auto;
+        }
+
+        @include desktop {
+            font-size: 8vh;
+        }
 
         & span {
 
             position: relative;
 
-            &:before {
+            background-image: linear-gradient($rojo-transparente, $rojo-transparente);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 3rem;
 
-                position: absolute;
-                bottom: 0;
-                left: -10px;
-                right: -10px;
-                display: block;
-                height: 4rem;
-                content: "";
-                background-color: $rojo;
-                opacity: 65%;
+            animation-name: linea-mobile;
+            animation-duration: 3s;
+            // animation-delay: 1s;
+            animation-iteration-count: 1;
 
-                z-index: -1;
-
+            @include tablet {
+                animation-name: linea;
+                background-size: 100% 3rem;
             }
-
 
         }
 
@@ -60,15 +72,55 @@
 
     &__subtitulo {
 
-        font-size: 6.4rem;
-        margin: 0rem;
+        font-size: 2.6rem;
+        text-align: center;
+        margin: 0;
         margin-bottom: 3rem;
+
+        @include tablet {
+            font-size: 4.2rem;
+        }
+        @include desktop {
+            font-size: 5vh;
+        }
+
+
     }
 
     &__btn {
 
-        font-size: 4rem;
+        font-size: 2.4rem;
+
+        @include desktop {
+            font-size: 3rem;
+        }
 
     }
+
+}
+
+@keyframes linea-mobile {
+
+    0% {
+        background-size: 0% 2rem;
+    }
+
+    100% {
+        background-size: 100% 2rem;
+    }
+
+
+}
+
+@keyframes linea {
+
+    0% {
+        background-size: 0% 4rem;
+    }
+
+    100% {
+        background-size: 100% 4rem;
+    }
+
 
 }
