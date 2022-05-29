@@ -364,7 +364,7 @@ h4 {
   justify-content: flex-end; }
 
 .rojo {
-  color: #CE0000; }
+  color: #CE0000 !important; }
 
 .shadow {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
@@ -440,21 +440,40 @@ h4 {
     width: 24rem;
     align-self: center; }
   .header__container-menu {
-    display: none;
+    position: absolute;
     flex-direction: column;
-    align-items: center;
-    gap: 4rem; }
+    top: 12rem;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 0rem;
+    margin: 0;
+    margin-left: 100%;
+    transition: all .5s;
+    list-style: none; }
     @media (min-width: 1024px) {
       .header__container-menu {
+        background-color: initial;
+        position: static;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 4rem;
         margin-top: 4rem; } }
+    .header__container-menu li {
+      display: block; }
   .header__link {
     display: flex;
     align-items: center;
     font-size: 1.8rem;
     font-weight: 700;
-    gap: .4rem; }
+    gap: .4rem;
+    color: #000000;
+    padding: 1rem 2rem; }
+    @media (min-width: 1024px) {
+      .header__link {
+        color: #000000; } }
     .header__link span {
       transform: rotate(90deg);
       font-size: 1.6rem; }
@@ -464,11 +483,50 @@ h4 {
     @media (min-width: 1024px) {
       .header__boton {
         display: none; } }
+  .header__container-submenu {
+    position: relative; }
+    .header__container-submenu .submenu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all .3s; }
+      @media (min-width: 1024px) {
+        .header__container-submenu .submenu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 30rem; }
+          .header__container-submenu .submenu:hover {
+            background-color: #444444; } }
+      .header__container-submenu .submenu li {
+        padding: 0rem; }
+        .header__container-submenu .submenu li a {
+          padding-left: 4rem;
+          color: #000000;
+          background-color: #e5e5e5; }
+          .header__container-submenu .submenu li a:hover {
+            background-color: #CE0000; }
+    @media (min-width: 1024px) {
+      .header__container-submenu:hover .submenu {
+        overflow: visible; } }
 
 .btn-donar {
   position: absolute;
-  top: 0px;
-  right: 5rem; }
+  top: 12rem;
+  right: 0rem;
+  z-index: -1; }
+  @media (min-width: 1024px) {
+    .btn-donar {
+      top: 0px;
+      right: 5rem; } }
+
+.show {
+  margin-left: 0; }
+
+.rotar {
+  transform: rotate(-90deg) !important; }
 
 .hero {
   position: relative;

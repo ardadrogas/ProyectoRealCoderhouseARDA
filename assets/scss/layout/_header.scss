@@ -1,5 +1,5 @@
-.header{
-    
+.header {
+
     position: sticky;
     background-color: $blanco;
     display: flex;
@@ -7,56 +7,86 @@
     justify-content: space-between;
     padding: 2rem;
     height: 120px;
-    
+
     top: 0px;
     z-index: 10;
-    
+
     @include desktop {
         padding: 2rem 5rem;
     }
 
 
-    & .container-logo{
+    & .container-logo {
 
         width: 24rem;
         align-self: center;
-        
+
     }
 
-    &__container-menu{
+    &__container-menu {
 
-        display: none;
+        position: absolute;
+        // display: none;
         flex-direction: column;
-        align-items: center;
-        gap: 4rem;
-        
+        top: 12rem;
+        left: 0;
+        background-color: $blanco;
+        width: 100%;
+
+        padding: 0rem;
+        margin: 0;
+        margin-left: 100%;
+        transition: all .5s;
+        list-style: none;
+
         @include desktop {
+            background-color: initial;
+
+            position: static;
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
 
+            gap: 4rem;
             margin-top: 4rem;
+        }
+
+        & li {
+
+            display: block;
+
         }
 
     }
 
-    &__link{
+    &__link {
 
         display: flex;
         align-items: center;
         font-size: 1.8rem;
         font-weight: $bold;
         gap: .4rem;
+        color: $negro;
+        padding: 1rem 2rem;
 
-        & span{
+
+        @include desktop {
+
+            color: $negro;
+
+        }
+
+        & span {
 
             transform: rotate(90deg);
             font-size: 1.6rem;
 
         }
-        
+
     }
 
-    &__boton{
+    &__boton {
 
         display: block;
         font-size: 5rem;
@@ -66,11 +96,90 @@
         }
     }
 
+    &__container-submenu {
+
+        position: relative;
+
+        & .submenu {
+
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all .3s;
+
+
+            @include desktop {
+                position: absolute;
+
+                top: 100%;
+                left: 0;
+                width: 30rem;
+
+                &:hover {
+
+                    background-color: $grisOscuro;
+
+                }
+
+            }
+
+            & li {
+
+                padding: 0rem;
+
+                & a {
+
+                    padding-left: 4rem;
+                    color: $negro;
+                    background-color: $gris;
+
+                    &:hover {
+
+                        background-color: $rojo;
+
+                    }
+                }
+            }
+
+        }
+
+        @include desktop {
+
+            &:hover .submenu {
+                overflow: visible;
+            }
+
+        }
+
+    }
+
 }
-.btn-donar{
+
+.btn-donar {
 
     position: absolute;
-    top: 0px;
-    right: 5rem;
+    top: 12rem;
+    right: 0rem;
+
+    z-index: -1;
+
+    @include desktop {
+        top: 0px;
+        right: 5rem;
+    }
+
+}
+
+.show {
+
+    margin-left: 0;
+
+}
+
+.rotar {
+
+    transform: rotate(-90deg)!important;
 
 }
