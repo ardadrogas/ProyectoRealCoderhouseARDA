@@ -35,7 +35,7 @@
 
         padding: 0rem;
         margin: 0;
-        margin-left: 100%;
+        margin-left: -100%;
         transition: all .5s;
         list-style: none;
 
@@ -48,7 +48,7 @@
             align-items: center;
             justify-content: flex-end;
 
-            gap: 4rem;
+            margin: 0;
             margin-top: 4rem;
         }
 
@@ -134,10 +134,11 @@
                     padding-left: 4rem;
                     color: $negro;
                     background-color: $gris;
-
+                    
                     &:hover {
-
+                        
                         background-color: $rojo;
+                        color: $blanco;
 
                     }
                 }
@@ -163,6 +164,8 @@
     top: 12rem;
     right: 0rem;
 
+    font-size: 1.8rem;
+
     z-index: -1;
 
     @include desktop {
@@ -175,11 +178,12 @@
 .show {
 
     margin-left: 0;
+    display: flex;
 
 }
 
 .rotar {
 
-    transform: rotate(-90deg)!important;
+    transform: rotate(-90deg) !important;
 
 }

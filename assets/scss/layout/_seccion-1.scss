@@ -1,0 +1,142 @@
+.seccion-1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: calc(100vh - 12rem);
+
+    padding: 5rem;
+
+    text-align: center;
+
+    @include tablet {
+
+
+        padding: 10rem;
+
+    }
+
+    @include desktop {
+        padding: 5% 15%;
+    }
+
+    &__titulo {
+
+        font-size: 6rem;
+        font-weight: $black;
+        position: relative;
+        overflow: visible;
+
+        @include tablet {
+
+            font-size: 8.4rem;
+
+        }
+        @include desktop {
+            font-size: 6vw;
+        }
+
+        & span {
+
+            position: relative;
+
+        }
+
+        & span:before {
+
+            position: absolute;
+            bottom: 0;
+            left: -3.5rem;
+            right: 2.5rem;
+            height: 3rem;
+            content: "";
+            background-color: $rojo;
+            z-index: -1;
+
+            @include tablet {
+                left: -4rem;
+                right: 3rem;
+            }
+
+            @include desktop{
+
+                left: -5rem;
+                right: 4rem;
+
+
+            }
+
+        }
+
+    }
+
+    &__subtitulo {
+
+        font-size: 2.2rem;
+        font-weight: $semi-bold;
+
+        @include tablet {
+
+            font-size: 3.6rem;
+
+        }
+
+        @include desktop {
+            font-size: 2.5vw;
+        }
+
+        & span {
+
+            position: relative;
+
+        }
+
+        & span:before {
+
+            position: absolute;
+            bottom: -.5rem;
+            width: 3rem;
+            right: -2rem;
+            height: 2rem;
+            content: "";
+            background-color: $rojo;
+            z-index: -1;
+
+            // @include tablet {
+            //     left: -4rem;
+            //     right: 3rem;
+            // }
+
+        }
+
+    }
+
+    &__descripcion {
+
+        font-size: 1.8rem;
+        font-weight: $medium;
+
+        @include tablet {
+
+            font-size: 2.4rem;
+
+        }
+
+        @include desktop {
+            font-size: 1.8vw;
+        }
+
+
+
+    }
+
+    &__btn {
+
+        @include tablet {
+            font-size: 2.4rem;
+        }
+
+    }
+
+}

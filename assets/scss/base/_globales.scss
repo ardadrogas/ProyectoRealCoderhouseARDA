@@ -9,9 +9,17 @@ body {
     font-family: $fuente_principal;
     font-size: 1.6rem;
     line-height: 1.4;
+
+    background-image: url('/assets/images/body_background.png');
+    background-size: cover;
+    background-position: initial;
+
+    overflow-x: hidden;
+
 }
 p {
     font-size: 2rem;
+    margin: 0;
 }
 .contenedor {
     width: 95%;
