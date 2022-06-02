@@ -686,3 +686,63 @@ h4 {
   @media (min-width: 768px) {
     .seccion-1__btn {
       font-size: 2.4rem; } }
+
+.seccion-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 12rem);
+  padding: 5rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .seccion-2 {
+      padding: 10rem; } }
+  @media (min-width: 1024px) {
+    .seccion-2 {
+      padding: 5% 15%; } }
+  .seccion-2__titulo {
+    font-size: 3.2rem;
+    font-weight: 900;
+    position: relative;
+    overflow: visible; }
+    @media (min-width: 768px) {
+      .seccion-2__titulo {
+        font-size: 5.2rem; } }
+    @media (min-width: 1024px) {
+      .seccion-2__titulo {
+        font-size: 3vw; } }
+    .seccion-2__titulo span {
+      position: relative; }
+    .seccion-2__titulo span:before {
+      position: absolute;
+      bottom: 0;
+      left: -3.5rem;
+      right: 2.5rem;
+      height: 3rem;
+      content: "";
+      background-color: #CE0000;
+      z-index: -1; }
+      @media (min-width: 768px) {
+        .seccion-2__titulo span:before {
+          left: -4rem;
+          right: 3rem; } }
+      @media (min-width: 1024px) {
+        .seccion-2__titulo span:before {
+          left: -5rem;
+          right: 4rem; } }
+  .seccion-2__descripcion {
+    font-size: 1.8rem;
+    font-weight: 500; }
+    @media (min-width: 768px) {
+      .seccion-2__descripcion {
+        font-size: 2.4rem; } }
+    @media (min-width: 1024px) {
+      .seccion-2__descripcion {
+        font-size: 1.8vw;
+        margin-top: 8rem; } }
+  @media (min-width: 768px) {
+    .seccion-2__btn {
+      font-size: 2.4rem; } }
+  @media (min-width: 1024px) {
+    .seccion-2__btn {
+      font-size: 3.2rem; } }

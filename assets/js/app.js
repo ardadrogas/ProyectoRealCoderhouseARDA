@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const height = subMenu.scrollHeight;
         
         const arrow = this.childNodes;
-        console.log(arrow);
-
 
         if (subMenu.classList.contains('desplegar')) {
 
