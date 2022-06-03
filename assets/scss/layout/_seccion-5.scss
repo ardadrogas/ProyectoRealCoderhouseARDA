@@ -1,0 +1,235 @@
+.seccion-5 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: calc(100vh - 12rem);
+
+    padding: 5rem;
+
+    text-align: center;
+
+    @include tablet {
+
+        padding: 10rem;
+
+    }
+
+    @include desktop {
+        // padding: 5% 15%;
+        padding: 0;
+        height: 175rem;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    &__titulo {
+
+        font-size: 3.2rem;
+        font-weight: $black;
+        position: relative;
+        overflow: visible;
+        color: $negro;
+        z-index: 2;
+        position: relative;
+
+
+        @include tablet {
+
+            font-size: 5.2rem;
+
+        }
+
+        @include desktop {
+            font-size: 6.4rem;
+        }
+
+        &:before {
+
+            position: absolute;
+            bottom: 0;
+            left: -3.5rem;
+            right: 2.5rem;
+            height: 3rem;
+            content: "";
+            background-color: $rojo;
+            z-index: -1;
+
+            @include tablet {
+                left: -4rem;
+                right: 3rem;
+            }
+
+            @include desktop {
+
+                left: 1rem;
+                right: -5rem;
+
+
+            }
+
+        }
+
+    }
+
+    &__descripcion {
+
+        font-size: 3.2rem;
+        width: 144.4rem;
+
+    }
+
+    &__subtitulo {
+
+        font-size: 1.8rem;
+        font-weight: $medium;
+        color: $negro;
+
+        @include tablet {
+
+            font-size: 2.4rem;
+
+        }
+
+        @include desktop {
+            font-size: 3.2rem;
+            font-weight: $bold;
+            width: 85rem;
+        }
+
+
+
+    }
+
+    &__container {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14rem;
+
+        &__contactos {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10rem;
+
+            &__item {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;
+
+                img {
+
+                    width: 5rem;
+
+                }
+
+                p {
+
+                    font-size: 3.2rem;
+                    font-weight: $semi-bold;
+                    margin-top: 1rem;
+
+                }
+
+            }
+
+            & :last-child {
+
+                flex-direction: row;
+                gap: 8.8rem;
+
+                a {
+
+                    width: 8rem;
+                    fill: $rojo;
+
+                }
+
+            }
+
+
+        }
+
+        &__formulario {
+
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            padding: 4.5rem;
+            width: 85rem;
+
+            background-color: $blanco;
+
+            &__item {
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                font-size: 2.4rem;
+                font-weight: $semi-bold;
+
+                input {
+
+                    width: 100%;
+                    height: 7rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid $grisOscuro;
+                    padding: 0 1rem;
+                    font-size: 2.4rem;
+                    font-weight: $semi-bold;
+
+                }
+
+                textarea {
+
+                    width: 100%;
+                    height: 32rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid $grisOscuro;
+                    padding: 1rem;
+                    font-size: 2.4rem;
+                    font-weight: $semi-bold;
+                    resize: none;
+
+
+                }
+
+            }
+
+            &>input {
+
+                font-size: 3.2rem;
+                font-weight: $semi-bold;
+
+            }
+
+        }
+
+    }
+
+    &__btn {
+
+        @include tablet {
+            font-size: 2.4rem;
+        }
+
+        @include desktop {
+            font-size: 3.2rem;
+            font-weight: $semi-bold;
+            padding: 2rem 1.5rem;
+        }
+
+    }
+
+}

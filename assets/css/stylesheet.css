@@ -521,7 +521,7 @@ h4 {
           left: 0;
           width: 30rem; }
           .header__container-submenu .submenu:hover {
-            background-color: #444444; } }
+            background-color: #959596; } }
       .header__container-submenu .submenu li {
         padding: 0rem; }
         .header__container-submenu .submenu li a {
@@ -977,7 +977,8 @@ h4 {
     @media (min-width: 1024px) {
       .seccion-4__subtitulo {
         font-size: 4.8rem;
-        font-weight: 700; } }
+        font-weight: 700;
+        margin-left: 10rem; } }
   @media (min-width: 768px) {
     .seccion-4__btn {
       font-size: 2.4rem; } }
@@ -986,3 +987,199 @@ h4 {
       font-size: 3.2rem;
       font-weight: 600;
       padding: 2rem 1.5rem; } }
+
+.seccion-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 12rem);
+  padding: 5rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .seccion-5 {
+      padding: 10rem; } }
+  @media (min-width: 1024px) {
+    .seccion-5 {
+      padding: 0;
+      height: 175rem;
+      justify-content: center;
+      gap: 10rem; } }
+  .seccion-5__titulo {
+    font-size: 3.2rem;
+    font-weight: 900;
+    position: relative;
+    overflow: visible;
+    color: #000000;
+    z-index: 2;
+    position: relative; }
+    @media (min-width: 768px) {
+      .seccion-5__titulo {
+        font-size: 5.2rem; } }
+    @media (min-width: 1024px) {
+      .seccion-5__titulo {
+        font-size: 6.4rem; } }
+    .seccion-5__titulo:before {
+      position: absolute;
+      bottom: 0;
+      left: -3.5rem;
+      right: 2.5rem;
+      height: 3rem;
+      content: "";
+      background-color: #CE0000;
+      z-index: -1; }
+      @media (min-width: 768px) {
+        .seccion-5__titulo:before {
+          left: -4rem;
+          right: 3rem; } }
+      @media (min-width: 1024px) {
+        .seccion-5__titulo:before {
+          left: 1rem;
+          right: -5rem; } }
+  .seccion-5__descripcion {
+    font-size: 3.2rem;
+    width: 144.4rem; }
+  .seccion-5__subtitulo {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .seccion-5__subtitulo {
+        font-size: 2.4rem; } }
+    @media (min-width: 1024px) {
+      .seccion-5__subtitulo {
+        font-size: 3.2rem;
+        font-weight: 700;
+        width: 85rem; } }
+  .seccion-5__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14rem; }
+    .seccion-5__container__contactos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10rem; }
+      .seccion-5__container__contactos__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem; }
+        .seccion-5__container__contactos__item img {
+          width: 5rem; }
+        .seccion-5__container__contactos__item p {
+          font-size: 3.2rem;
+          font-weight: 600;
+          margin-top: 1rem; }
+      .seccion-5__container__contactos :last-child {
+        flex-direction: row;
+        gap: 8.8rem; }
+        .seccion-5__container__contactos :last-child a {
+          width: 8rem;
+          fill: #CE0000; }
+    .seccion-5__container__formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 4.5rem;
+      width: 85rem;
+      background-color: #FFFFFF; }
+      .seccion-5__container__formulario__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 2.4rem;
+        font-weight: 600; }
+        .seccion-5__container__formulario__item input {
+          width: 100%;
+          height: 7rem;
+          border-radius: 0.5rem;
+          border: 1px solid #959596;
+          padding: 0 1rem;
+          font-size: 2.4rem;
+          font-weight: 600; }
+        .seccion-5__container__formulario__item textarea {
+          width: 100%;
+          height: 32rem;
+          border-radius: 0.5rem;
+          border: 1px solid #959596;
+          padding: 1rem;
+          font-size: 2.4rem;
+          font-weight: 600;
+          resize: none; }
+      .seccion-5__container__formulario > input {
+        font-size: 3.2rem;
+        font-weight: 600; }
+  @media (min-width: 768px) {
+    .seccion-5__btn {
+      font-size: 2.4rem; } }
+  @media (min-width: 1024px) {
+    .seccion-5__btn {
+      font-size: 3.2rem;
+      font-weight: 600;
+      padding: 2rem 1.5rem; } }
+
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 30rem;
+  padding: 9rem 10rem 0rem 10rem; }
+  .footer__background {
+    position: absolute;
+    bottom: 0;
+    z-index: -1; }
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF; }
+    .footer__item a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 500;
+      color: #FFFFFF; }
+  .footer > :nth-child(2) {
+    align-items: center;
+    text-align: center; }
+    .footer > :nth-child(2) a {
+      position: relative;
+      font-size: 4.8rem;
+      text-shadow: -2px -2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, 2px 2px 0 #FFFFFF;
+      color: #000000;
+      font-weight: 900; }
+      .footer > :nth-child(2) a:before {
+        position: absolute;
+        bottom: 0;
+        left: -3.5rem;
+        right: 2.5rem;
+        height: 3rem;
+        content: "";
+        background-color: #CE0000;
+        z-index: -1; }
+        @media (min-width: 768px) {
+          .footer > :nth-child(2) a:before {
+            left: -4rem;
+            right: 3rem; } }
+        @media (min-width: 1024px) {
+          .footer > :nth-child(2) a:before {
+            left: -1rem;
+            right: -1rem;
+            bottom: -.5rem; } }
+  .footer :nth-child(5) img {
+    width: 3rem; }
+  .footer :nth-child(6) {
+    flex-direction: row;
+    gap: 3rem; }
+    .footer :nth-child(6) a {
+      width: 4.4rem;
+      fill: #FFFFFF; }
