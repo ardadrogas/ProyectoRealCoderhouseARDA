@@ -8,11 +8,15 @@
     padding: 5rem;
 
     height: calc(100vh - 12rem);
-
+    
     color: $blanco;
-
+    
     @include desktop {
-        padding: 5% 10%;
+        // padding: 5% 10%;
+        padding: 0;
+        height: 85.2rem;
+        justify-content: center;
+        gap: 7rem;
     }
 
     & .background-img {
@@ -42,7 +46,8 @@
         }
 
         @include desktop {
-            font-size: 8vh;
+            font-size: 6.4rem;
+            width: 152rem;
         }
 
         & span {
@@ -75,12 +80,13 @@
         text-align: center;
         margin: 0;
         margin-bottom: 3rem;
-
+        
         @include tablet {
             font-size: 4.2rem;
         }
         @include desktop {
-            font-size: 5vh;
+            font-size: 4.8rem;
+            margin-bottom: 0;
         }
 
 
@@ -91,7 +97,7 @@
         font-size: 2.4rem;
 
         @include desktop {
-            font-size: 3rem;
+            font-size: 3.2rem;
         }
 
     }

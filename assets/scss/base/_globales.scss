@@ -8,7 +8,7 @@ html {
 body {
     font-family: $fuente_principal;
     font-size: 1.6rem;
-    line-height: 1.4;
+    // line-height: 1.4;
 
     background-image: url('/assets/images/body_background.png');
     background-size: cover;
@@ -38,7 +38,7 @@ picture {
     display: block;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: $fuente_principal;
     margin: 0;
     font-weight: 300;
