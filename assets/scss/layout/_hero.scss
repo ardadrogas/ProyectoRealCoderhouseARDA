@@ -14,7 +14,7 @@
     @include desktop {
         // padding: 5% 10%;
         padding: 0;
-        height: 85.2rem;
+        height: 84rem;
         justify-content: center;
         gap: 7rem;
     }
@@ -35,6 +35,23 @@
 
     }
 
+    &__container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+
+        padding: 0rem 13rem;
+
+        width: 100%;
+        max-width: 1280px;
+        height: 100%;
+
+
+    }
+
     &__titulo {
 
         font-size: 4rem;
@@ -47,7 +64,7 @@
 
         @include desktop {
             font-size: 6.4rem;
-            width: 152rem;
+            width: 100%;
         }
 
         & span {
@@ -85,7 +102,7 @@
             font-size: 4.2rem;
         }
         @include desktop {
-            font-size: 4.8rem;
+            font-size: 2.8rem;
             margin-bottom: 0;
         }
 
@@ -97,7 +114,7 @@
         font-size: 2.4rem;
 
         @include desktop {
-            font-size: 3.2rem;
+            font-size: 2.2rem;
         }
 
     }

@@ -4,9 +4,10 @@
     background-color: $blanco;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2rem;
-    height: 160px;
+    width: 100%;
+    height: 120px;
 
     top: 0px;
     z-index: 10;
@@ -16,14 +17,27 @@
     }
 
 
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1540px;
+        height: 100%;
+    }
+
+
     & .container-logo {
 
-        width: 24rem;
+        // width: 24rem;
         align-self: center;
+        height: 100%;
 
-        @include desktop {
+        img {
 
-            width: 33rem;
+            width: auto;
+            height: 100%;
 
         }
 
@@ -81,7 +95,7 @@
         @include desktop {
 
             color: $negro;
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             padding: 0;
 
         }
@@ -140,7 +154,7 @@
 
                 & a {
 
-                    padding-left: 4rem;
+                    padding: 1rem 0rem 1rem 4rem;
                     color: $negro;
                     background-color: $gris;
 
@@ -150,7 +164,9 @@
                         color: $blanco;
 
                     }
+
                 }
+                
             }
 
         }
@@ -174,13 +190,12 @@
     right: 0rem;
 
     font-size: 1.8rem;
-    
+
     z-index: -1;
-    
+
     @include desktop {
-        font-size: 2.4rem;
-        top: 0px;
-        right: 5rem;
+        top: -2rem;
+        right: 0px;
     }
 
 }
