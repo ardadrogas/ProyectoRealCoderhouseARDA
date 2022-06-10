@@ -3,26 +3,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
+    width: 100%;
     height: calc(100vh - 12rem);
-
-    padding: 5rem;
 
     text-align: center;
 
     @include tablet {
 
-        padding: 10rem;
+        // padding: 10rem;
 
     }
 
     @include desktop {
-        // padding: 5% 15%;
-        padding: 0;
-        height: 175rem;
+        height: 140rem;
+    }
+
+    &__container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 10rem;
+        gap: 6rem;
+
+        padding: 0rem 12rem;
+
+        width: 100%;
+        max-width: 128rem;
+
     }
 
     &__titulo {
@@ -43,7 +53,7 @@
         }
 
         @include desktop {
-            font-size: 6.4rem;
+            font-size: 4.8rem;
         }
 
         &:before {
@@ -76,39 +86,18 @@
 
     &__descripcion {
 
-        font-size: 3.2rem;
-        width: 144.4rem;
+        font-size: 2.8rem;
 
     }
 
-    &__subtitulo {
-
-        font-size: 1.8rem;
-        font-weight: $medium;
-        color: $negro;
-
-        @include tablet {
-
-            font-size: 2.4rem;
-
-        }
-
-        @include desktop {
-            font-size: 3.2rem;
-            font-weight: $bold;
-            width: 85rem;
-        }
-
-
-
-    }
-
-    &__container {
+    &__datos {
 
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 14rem;
+
+        margin-top: 4rem;
 
         &__contactos {
 
@@ -116,7 +105,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 10rem;
+            gap: 8rem;
 
             &__item {
 
@@ -124,7 +113,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 3rem;
+                gap: 2.8rem;
 
                 img {
 
@@ -134,7 +123,7 @@
 
                 p {
 
-                    font-size: 3.2rem;
+                    font-size: 2.8rem;
                     font-weight: $semi-bold;
                     margin-top: 1rem;
 
@@ -166,7 +155,7 @@
             gap: 3rem;
 
             padding: 4.5rem;
-            width: 85rem;
+            width: 55rem;
 
             background-color: $blanco;
 
@@ -176,13 +165,18 @@
                 flex-direction: column;
                 align-items: flex-start;
 
-                font-size: 2.4rem;
+                font-size: 1.8rem;
                 font-weight: $semi-bold;
+
+                
+                label{
+                    margin-bottom: .5rem;
+                }
 
                 input {
 
                     width: 100%;
-                    height: 7rem;
+                    height: 4rem;
                     border-radius: 0.5rem;
                     border: 1px solid $grisOscuro;
                     padding: 0 1rem;
@@ -194,7 +188,7 @@
                 textarea {
 
                     width: 100%;
-                    height: 32rem;
+                    height: 20rem;
                     border-radius: 0.5rem;
                     border: 1px solid $grisOscuro;
                     padding: 1rem;
@@ -207,13 +201,6 @@
 
             }
 
-            &>input {
-
-                font-size: 3.2rem;
-                font-weight: $semi-bold;
-
-            }
-
         }
 
     }
@@ -221,14 +208,9 @@
     &__btn {
 
         @include tablet {
-            font-size: 2.4rem;
+            // font-size: 2.4rem;
         }
 
-        @include desktop {
-            font-size: 3.2rem;
-            font-weight: $semi-bold;
-            padding: 2rem 1.5rem;
-        }
 
     }
 

@@ -16,14 +16,14 @@
 
             container.innerHTML += `
     
-                <div class="seccion-4__container__item">
+                <div class="seccion-4__grid__item">
     
-                    <div class="seccion-4__container__item__img">
-                        <div class="seccion-4__container__item__img__filtro"></div>
+                    <div class="seccion-4__grid__item__img">
+                        <div class="seccion-4__grid__item__img__filtro"></div>
                         <img src=${articulo.img} alt=${articulo.titulo} />
                     </div>
 
-                    <h4 class="seccion-4__container__item__titulo">${articulo.titulo}</h4>
+                    <h4 class="seccion-4__grid__item__titulo">${articulo.titulo}</h4>
     
                 </div>
     

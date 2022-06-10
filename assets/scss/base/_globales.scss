@@ -6,6 +6,7 @@ html {
     box-sizing: inherit;
 }
 body {
+    position: relative;
     font-family: $fuente_principal;
     font-size: 1.6rem;
     // line-height: 1.4;
@@ -18,7 +19,7 @@ body {
 
 }
 p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 0;
 }
 .contenedor {

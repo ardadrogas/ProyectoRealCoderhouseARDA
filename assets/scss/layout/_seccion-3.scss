@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
 
+    width: 100%;
     height: calc(100vh - 12rem);
 
     padding: 5rem;
@@ -20,41 +21,59 @@
     @include desktop {
         // padding: 5% 15%;
         padding: 0;
-        height: 146.5rem;
+        height: 115rem;
         justify-content: center;
-        gap: 10rem;
     }
 
-    &__container{
+    &__container {
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10rem;
-        width: 144rem;
+        gap: 6rem;
+
+        width: 100%;
+        max-width: 128rem;
+
+        &__texto{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6rem;
+    
+            padding: 0rem 13rem;
+            width: 100%;
+            max-width: 128rem;
+
+        }
 
     }
 
     &__titulo {
 
+        position: relative;
+        
         font-size: 3.2rem;
-        font-weight: $black;
-        position: relative;
-        overflow: visible;
         color: $negro;
-        z-index: 2;
-        position: relative;
-
+        font-weight: $black;
+        
         align-self: flex-start;
+
+        margin-left: 3rem;
+
+        z-index: 2;
 
         @include tablet {
 
             font-size: 5.2rem;
 
         }
+
         @include desktop {
-            font-size: 6.4rem;
+            font-size: 4.8rem;
         }
 
         &:before {
@@ -73,11 +92,11 @@
                 right: 3rem;
             }
 
-            @include desktop{
+            @include desktop {
 
-                left: 1rem;
-                right: -5rem;
-
+                left: 0rem;
+                right: 5rem;
+                bottom: -1rem;
 
             }
 
@@ -99,73 +118,65 @@
         }
 
         @include desktop {
-            font-size: 3.6rem;
+            font-size: 2.8rem;
         }
 
 
 
     }
 
-    &__grid{
+    &__grid {
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 2.5rem;
-   
-        &__item{
+
+        &__item {
 
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 4rem;
-            
+            gap: 2.5rem;
+
             background-color: $blanco;
-            box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,0.25);
-            padding: 0rem 1.5rem ;
-            width: 41rem;
-            height: 50rem;
-            
+            box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.25);
+            padding: 0rem 2rem;
+            width: 29rem;
+            height: 37rem;
+
             h4 {
-            
-                font-size: 3.2rem;
+
+                font-size: 2.2rem;
                 font-weight: $bold;
-                
-            }
-            
-            p{
-                
-                font-size: 2.4rem;
 
             }
 
-            &__img{
+            p {
 
+                font-size: 1.8rem;
+
+            }
+
+            &__img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 background-color: $rojo;
 
-                padding: 1.5rem;
-                width: 8rem;
-                height: 10rem;
-
-
+                padding: 1.3rem;
+                width: 5.6rem;
+                height: 7.5rem;
 
             }
 
         }
 
-        & :nth-child(odd){
+        & :nth-child(1) {
 
             justify-content: flex-start;
+            gap: 3rem;
 
-        }
-        & :nth-child(even){
-
-            justify-content: flex-end;
-
-        }
-        
-        & :nth-child(2){
-            
-            & >div{
+            &>div {
 
                 align-self: flex-start;
                 margin-left: 3rem;
@@ -173,9 +184,40 @@
             }
 
         }
-        & :nth-child(n+3){
-            
-            & >div{
+
+        & :nth-child(2) {
+
+            justify-content: flex-end;
+            gap: 3rem;
+
+            &>div {
+
+                align-self: flex-start;
+                margin-left: 3rem;
+
+            }
+
+        }
+
+        & :nth-child(3) {
+
+            justify-content: flex-start;
+            gap: 3rem;
+
+
+
+        }
+
+        & :nth-child(4) {
+
+            justify-content: flex-end;
+            gap: 3rem;
+
+        }
+
+        & :nth-child(n+3) {
+
+            &>div {
 
                 align-self: flex-end;
                 margin-right: 3rem;
@@ -189,15 +231,9 @@
     &__btn {
 
         @include tablet {
-            font-size: 2.4rem;
+            // font-size: 2.4rem;
         }
-
-        @include desktop {
-            font-size: 3.2rem;
-            font-weight: $semi-bold;
-            padding: 2rem 1.5rem;
-        }
-
+ 
     }
 
 }

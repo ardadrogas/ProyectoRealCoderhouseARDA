@@ -2,15 +2,121 @@
 
     position: relative;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    align-items: flex-start;
 
     width: 100vw;
-    height: 30rem;
+    height: 20rem;
 
-    padding: 9rem 10rem 0rem 10rem;
+
+    &__container {
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        align-items: flex-start;
+        gap: 2rem;
+
+        padding: 2rem;
+
+        width: 100%;
+        max-width: 128rem;
+        height: 100%;
+
+        margin: 0 auto;
+
+        &> :nth-child(1) {
+
+            align-items: center;
+            justify-content: space-evenly;
+            // gap: 2.5rem;
+
+            align-self: center;
+
+            text-align: center;
+            padding-top: 0rem;
+
+            height: 100%;
+
+            a {
+
+                position: relative;
+
+                font-size: 4.8rem;
+                text-shadow: -2px -2px 0 $blanco, 2px -2px 0 $blanco, -2px 2px 0 $blanco, 2px 2px 0 $blanco;
+                color: $negro;
+                font-weight: $black;
+
+                &:before {
+
+                    position: absolute;
+                    bottom: 0;
+                    left: -3.5rem;
+                    right: 2.5rem;
+                    height: 3rem;
+                    content: "";
+                    background-color: $rojo;
+                    z-index: -1;
+
+                    @include tablet {
+                        left: -4rem;
+                        right: 3rem;
+                    }
+
+                    @include desktop {
+
+                        left: -1rem;
+                        right: -1rem;
+                        bottom: -.5rem;
+
+                    }
+
+                }
+
+
+            }
+
+            p {
+
+                width: 19rem;
+
+            }
+
+        }
+
+        & :nth-child(4) {
+
+            img {
+
+                width: 3rem;
+
+            }
+
+        }
+
+        & :nth-child(5) {
+
+            flex-direction: row;
+            gap: 3rem;
+
+            align-self: center;
+            padding-top: 0rem;
+
+
+            a {
+
+                width: 4.4rem;
+                fill: $blanco;
+
+                & :hover {
+
+                    fill: $gris;
+
+
+                }
+
+            }
+
+        }
+    }
 
     &__background {
 
@@ -24,11 +130,12 @@
 
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
 
-        font-size: 2rem;
         font-weight: $bold;
         color: $blanco;
+
+        padding-top: 2rem;
 
         a {
 
@@ -36,50 +143,14 @@
             align-items: center;
             gap: 1rem;
 
+            font-size: 1.6rem;
             font-weight: $medium;
             color: $blanco;
 
-        }
+            & :hover {
 
-    }
+                color: $gris;
 
-    &> :nth-child(2) {
-
-        align-items: center;
-        text-align: center;
-
-        a {
-
-            position: relative;
-
-            font-size: 4.8rem;
-            text-shadow: -2px -2px 0 $blanco, 2px -2px 0 $blanco, -2px 2px 0 $blanco, 2px 2px 0 $blanco;
-            color: $negro;
-            font-weight: $black;
-
-            &:before {
-
-                position: absolute;
-                bottom: 0;
-                left: -3.5rem;
-                right: 2.5rem;
-                height: 3rem;
-                content: "";
-                background-color: $rojo;
-                z-index: -1;
-
-                @include tablet {
-                    left: -4rem;
-                    right: 3rem;
-                }
-
-                @include desktop {
-
-                    left: -1rem;
-                    right: -1rem;
-                    bottom: -.5rem;
-
-                }
 
             }
 
@@ -88,28 +159,7 @@
 
     }
 
-    & :nth-child(5) {
 
-        img {
 
-            width: 3rem;
-
-        }
-
-    }
-
-    & :nth-child(6) {
-
-        flex-direction: row;
-        gap: 3rem;
-
-        a {
-
-            width: 4.4rem;
-            fill: $blanco;
-
-        }
-
-    }
 
 }

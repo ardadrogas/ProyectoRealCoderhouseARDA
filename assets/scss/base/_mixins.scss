@@ -24,10 +24,11 @@
 
 @mixin boton($bgColor, $display ) {
     background-color: $bgColor;
+    font-size: 2.4rem;
     color: $blanco;
     font-weight: $bold;
     text-decoration: none;
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
     text-align: center;
     // margin-top: calc($separacion / 2);
     display: $display;
