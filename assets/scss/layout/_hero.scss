@@ -4,25 +4,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 5rem;
-
-    height: calc(100vh - 12rem);
+    justify-content: center;
+    padding: 0;
+    height: 84rem;
+    gap: 7rem;
     
     color: $blanco;
     
-    @include desktop {
-        // padding: 5% 10%;
-        padding: 0;
-        height: 84rem;
-        justify-content: center;
-        gap: 7rem;
+    
+    @include mobile {
+        
+        padding: 5rem;
+        height: calc(100vh - 12rem);
+        justify-content: space-between;
+        gap: 0rem;
+
     }
 
     & .background-img {
 
         position: absolute;
-        background-image: url('/assets/images/todesarda.png');
+        background-image: url('../images/todesarda.png');
         background-size: cover;
         background-position: center;
         top: 0;
@@ -54,17 +56,13 @@
 
     &__titulo {
 
-        font-size: 4rem;
+        font-size: 6.4rem;
         font-weight: $bold;
         line-height: initial;
+        width: 100%;
 
-        @include tablet {
-            font-size: 7.2rem;
-        }
-
-        @include desktop {
-            font-size: 6.4rem;
-            width: 100%;
+        @include mobile {
+            font-size: 4rem;
         }
 
         & span {
@@ -93,31 +91,17 @@
 
     &__subtitulo {
 
-        font-size: 2.6rem;
+        font-size: 2.8rem;
         text-align: center;
-        margin: 0;
-        margin-bottom: 3rem;
-        
-        @include tablet {
-            font-size: 4.2rem;
-        }
-        @include desktop {
-            font-size: 2.8rem;
-            margin-bottom: 0;
+
+        @include mobile {
+            font-size: 2.6rem;
+            margin-bottom: 3rem;
         }
 
 
     }
 
-    &__btn {
-
-        font-size: 2.4rem;
-
-        @include desktop {
-            font-size: 2.2rem;
-        }
-
-    }
 
 }
 

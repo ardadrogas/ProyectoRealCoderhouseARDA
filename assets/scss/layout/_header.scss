@@ -12,7 +12,7 @@
     top: 0px;
     z-index: 10;
 
-    @include desktop {
+    @include mobile {
         padding: 2rem 5rem;
     }
 
@@ -45,32 +45,35 @@
 
     &__container-menu {
 
-        position: absolute;
-        // display: none;
-        flex-direction: column;
-        top: 12rem;
-        left: 0;
-        background-color: $blanco;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6rem;
+
         width: 100%;
 
         padding: 0rem;
         margin: 0;
-        margin-left: -100%;
-        transition: all .5s;
-        list-style: none;
+        margin-top: 4rem;
 
-        @include desktop {
-            background-color: initial;
+        @include mobile {
 
-            position: static;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 6rem;
+            background-color: $blanco;
+
+            position: absolute;
+            flex-direction: column;
+
+            gap: 0;
+            top: 12rem;
+            left: 0;
 
             margin: 0;
-            margin-top: 4rem;
+
+            margin-left: -100%;
+            transition: all .5s;
+            list-style: none;
+
         }
 
         & li {
@@ -89,14 +92,12 @@
         font-weight: $bold;
         gap: .4rem;
         color: $negro;
-        padding: 1rem 2rem;
-
-
-        @include desktop {
-
-            color: $negro;
-            font-size: 1.8rem;
-            padding: 0;
+        padding: 0;
+        
+        
+        @include mobile {
+            
+            padding: 1rem 2rem;
 
         }
 
@@ -111,17 +112,28 @@
 
     &__boton {
 
-        display: block;
+        display: none;
         font-size: 5rem;
-
-        @include desktop {
-            display: none;
+        
+        @include mobile {
+            display: block;
         }
     }
 
     &__container-submenu {
 
         position: relative;
+
+        &:hover .submenu {
+            overflow: visible;
+        }
+
+        @include mobile {
+            &:hover .submenu {
+                overflow: auto;
+            }
+        }
+
 
         & .submenu {
 
@@ -133,18 +145,29 @@
             transition: all .3s;
 
 
-            @include desktop {
-                position: absolute;
+            position: absolute;
 
-                top: 100%;
-                left: 0;
-                width: 30rem;
+            top: 100%;
+            left: 0;
+            width: 30rem;
 
-                &:hover {
+            &:hover {
 
-                    background-color: $grisOscuro;
+                background-color: $grisOscuro;
 
-                }
+            }
+
+            @include mobile {
+
+                position: static;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                height: 0;
+                overflow: hidden;
+                transition: all .3s;
+
+
 
             }
 
@@ -166,18 +189,12 @@
                     }
 
                 }
-                
+
             }
 
         }
 
-        @include desktop {
 
-            &:hover .submenu {
-                overflow: visible;
-            }
-
-        }
 
     }
 
@@ -186,8 +203,8 @@
 .btn-donar {
 
     position: absolute;
-    top: 12rem;
-    right: 0rem;
+    top: -2rem;
+    right: 0px;
 
     font-size: 1.8rem;
 
@@ -195,9 +212,9 @@
 
     z-index: -1;
 
-    @include desktop {
-        top: -2rem;
-        right: 0px;
+    @include mobile {
+        top: 12rem;
+        right: 0rem;
     }
 
 }

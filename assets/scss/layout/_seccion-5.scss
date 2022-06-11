@@ -6,7 +6,7 @@
     justify-content: center;
 
     width: 100%;
-    height: calc(100vh - 12rem);
+    height: 135rem;
 
     text-align: center;
 
@@ -16,11 +16,11 @@
 
     }
 
-    @include desktop {
-        height: 140rem;
+    @include mobile {
+        height: calc(100vh - 12rem);
     }
 
-    &__container{
+    &__container {
 
         display: flex;
         flex-direction: column;
@@ -37,7 +37,7 @@
 
     &__titulo {
 
-        font-size: 3.2rem;
+        font-size: 4.8rem;
         font-weight: $black;
         position: relative;
         overflow: visible;
@@ -48,34 +48,35 @@
 
         @include tablet {
 
-            font-size: 5.2rem;
+            // font-size: 5.2rem;
 
         }
 
-        @include desktop {
-            font-size: 4.8rem;
+        @include mobile {
+            font-size: 3.2rem;
         }
 
         &:before {
 
             position: absolute;
             bottom: 0;
-            left: -3.5rem;
-            right: 2.5rem;
+            left: 1rem;
+            right: -5rem;
+
             height: 3rem;
             content: "";
             background-color: $rojo;
             z-index: -1;
 
             @include tablet {
-                left: -4rem;
-                right: 3rem;
+                // left: -4rem;
+                // right: 3rem;
             }
 
-            @include desktop {
+            @include mobile {
 
-                left: 1rem;
-                right: -5rem;
+                left: -3.5rem;
+                right: 2.5rem;
 
 
             }
@@ -93,11 +94,18 @@
     &__datos {
 
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 14rem;
 
         margin-top: 4rem;
+
+        @include mobile {
+
+            flex-direction: column;
+
+        }
 
         &__contactos {
 
@@ -168,8 +176,8 @@
                 font-size: 1.8rem;
                 font-weight: $semi-bold;
 
-                
-                label{
+
+                label {
                     margin-bottom: .5rem;
                 }
 
@@ -202,15 +210,6 @@
             }
 
         }
-
-    }
-
-    &__btn {
-
-        @include tablet {
-            // font-size: 2.4rem;
-        }
-
 
     }
 

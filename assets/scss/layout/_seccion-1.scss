@@ -6,19 +6,12 @@
     justify-content: center;
     
     width: 100%;
-    height: calc(100vh - 12rem);
-
+    height: 90rem;
+    
     text-align: center;
-
-    @include tablet {
-
-
-        // padding: 10rem;
-
-    }
-
-    @include desktop {
-        height: 90rem;
+    
+    @include mobile {
+        height: calc(100vh - 12rem);
     }
 
     &__container {
@@ -35,19 +28,13 @@
 
     &__titulo {
 
-        font-size: 6rem;
+        font-size: 6.4rem;
         font-weight: $black;
         position: relative;
         overflow: visible;
 
-        @include tablet {
-
-            font-size: 8.4rem;
-
-        }
-
-        @include desktop {
-            font-size: 6.4rem;
+        @include mobile {
+            font-size: 6rem;
         }
 
         & span {
@@ -60,22 +47,17 @@
 
             position: absolute;
             bottom: 0;
-            left: -3.5rem;
-            right: 2.5rem;
+            left: 5rem;
+            right: 4rem;
             height: 3rem;
             content: "";
             background-color: $rojo;
             z-index: -1;
 
-            @include tablet {
-                left: -4rem;
-                right: 3rem;
-            }
+            @include mobile {
 
-            @include desktop {
-
-                left: -5rem;
-                right: 4rem;
+                left: -3.5rem;
+                right: 2.5rem;
 
 
             }
@@ -86,18 +68,11 @@
 
     &__subtitulo {
 
-        font-size: 2.2rem;
+        font-size: 3.6rem;
         font-weight: $semi-bold;
 
-        @include tablet {
-
-            font-size: 3.6rem;
-
-        }
-
-        @include desktop {
-            font-size: 3.6rem;
-            width: 84.2rem;
+        @include mobile {
+            font-size: 2.2rem;
         }
 
         & span {
@@ -128,31 +103,11 @@
 
     &__descripcion {
 
-        font-size: 1.8rem;
+        font-size: 2.8rem;
         font-weight: $medium;
 
-        @include tablet {
-
-            font-size: 2.4rem;
-
-        }
-
-        @include desktop {
-            font-size: 2.8rem;
-        }
-
-
-
-    }
-
-    &__btn {
-
-        @include tablet {
-            font-size: 2.4rem;
-        }
-
-        @include desktop {
-            font-weight: $semi-bold;
+        @include mobile {
+            font-size: 1.8rem;
         }
 
     }

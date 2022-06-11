@@ -2,10 +2,10 @@
 
     position: relative;
 
-
     width: 100vw;
     height: 20rem;
 
+    margin-top: 10rem;
 
     &__container {
 
@@ -22,6 +22,12 @@
         height: 100%;
 
         margin: 0 auto;
+
+        @include mobile {
+
+            grid-template-columns: repeat(1, 1fr);
+
+        }
 
         &> :nth-child(1) {
 
@@ -48,25 +54,25 @@
                 &:before {
 
                     position: absolute;
-                    bottom: 0;
-                    left: -3.5rem;
-                    right: 2.5rem;
+                    left: -1rem;
+                    right: -1rem;
+                    bottom: -.5rem;
                     height: 3rem;
                     content: "";
                     background-color: $rojo;
                     z-index: -1;
 
                     @include tablet {
-                        left: -4rem;
-                        right: 3rem;
+                        // left: -4rem;
+                        // right: 3rem;
                     }
 
-                    @include desktop {
+                    @include mobile {
 
-                        left: -1rem;
-                        right: -1rem;
-                        bottom: -.5rem;
-
+                        left: -3.5rem;
+                        right: 2.5rem;
+                        bottom: 0;
+                        
                     }
 
                 }
