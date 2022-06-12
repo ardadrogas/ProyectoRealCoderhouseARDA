@@ -12,9 +12,8 @@
     color: $blanco;
     
     
-    @include mobile {
+    @include tablet {
         
-        padding: 5rem;
         height: calc(100vh - 12rem);
         justify-content: space-between;
         gap: 0rem;
@@ -51,6 +50,16 @@
         max-width: 1280px;
         height: 100%;
 
+        @include tablet{
+
+            padding: 0rem 7rem;
+
+        }
+        @include mobile{
+
+            padding: 0rem 4rem;
+
+        }
 
     }
 
@@ -60,6 +69,12 @@
         font-weight: $bold;
         line-height: initial;
         width: 100%;
+
+        @include tablet{
+
+            font-size: 6rem;
+
+        }
 
         @include mobile {
             font-size: 4rem;
@@ -74,14 +89,19 @@
             background-repeat: no-repeat;
             background-size: 100% 3rem;
 
-            animation-name: linea-mobile;
+            animation-name: linea;
             animation-duration: 3s;
             // animation-delay: 1s;
             animation-iteration-count: 1;
 
             @include tablet {
-                animation-name: linea;
-                background-size: 100% 3rem;
+                animation-name: linea-tablet;
+                background-size: 100% 2.5rem;
+            }
+
+            @include mobile {
+                animation-name: linea-mobile;
+                background-size: 100% 2rem;
             }
 
         }
@@ -94,12 +114,20 @@
         font-size: 2.8rem;
         text-align: center;
 
-        @include mobile {
+        @include tablet {
             font-size: 2.6rem;
-            margin-bottom: 3rem;
         }
 
 
+    }
+
+    &__btn {
+
+        @include mobile{
+
+            font-size: 1.8rem;
+
+        }
     }
 
 

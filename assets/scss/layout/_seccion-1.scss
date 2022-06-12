@@ -4,12 +4,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     width: 100%;
     height: 90rem;
-    
+
     text-align: center;
-    
+
     @include mobile {
         height: calc(100vh - 12rem);
     }
@@ -24,6 +24,19 @@
 
         padding: 0rem 23.4rem;
         max-width: 128rem;
+
+        @include tablet {
+
+            padding: 0rem 12rem;
+
+        }
+
+        @include mobile {
+
+            padding: 0rem 4rem;
+
+        }
+
     }
 
     &__titulo {
@@ -33,8 +46,12 @@
         position: relative;
         overflow: visible;
 
-        @include mobile {
+        @include tablet {
             font-size: 6rem;
+        }
+
+        @include mobile {
+            font-size: 4.2rem;
         }
 
         & span {
@@ -47,12 +64,17 @@
 
             position: absolute;
             bottom: 0;
-            left: 5rem;
-            right: 4rem;
+            left: -2rem;
+            right: -2rem;
             height: 3rem;
             content: "";
             background-color: $rojo;
             z-index: -1;
+
+            @include tablet {
+                height: 2rem;
+                bottom: .7rem;
+            }
 
             @include mobile {
 
@@ -71,8 +93,13 @@
         font-size: 3.6rem;
         font-weight: $semi-bold;
 
+        @include tablet {
+            font-size: 2.8rem;
+        }
+
         @include mobile {
             font-size: 2.2rem;
+            margin: 0rem 1rem
         }
 
         & span {
@@ -84,7 +111,7 @@
         & span:before {
 
             position: absolute;
-            bottom: 1rem;
+            bottom: 0rem;
             width: 3rem;
             right: -2rem;
             height: 2rem;
@@ -92,10 +119,15 @@
             background-color: $rojo;
             z-index: -1;
 
-            // @include tablet {
-            //     left: -4rem;
-            //     right: 3rem;
-            // }
+
+            @include tablet {
+                bottom: -.5rem;
+            }
+
+            @include mobile {
+                bottom: -.7rem;
+                right: -2.2rem;
+            }
 
         }
 
@@ -106,10 +138,25 @@
         font-size: 2.8rem;
         font-weight: $medium;
 
+        @include tablet {
+            font-size: 2.4rem;
+        }
+
         @include mobile {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
     }
+
+
+    &__btn {
+
+        @include mobile {
+
+            font-size: 1.8rem;
+
+        }
+    }
+
 
 }

@@ -5,26 +5,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
     width: 100%;
     height: 120px;
 
     top: 0px;
     z-index: 10;
 
-    @include mobile {
-        padding: 2rem 5rem;
-    }
-
-
     &__container {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        padding: 2rem;
+
         width: 100%;
         max-width: 1540px;
         height: 100%;
+
+        @include tablet {
+
+            padding: 2rem 4rem;
+
+        }
+
     }
 
 
@@ -43,13 +47,7 @@
 
     }
 
-    &__container-menu {
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 6rem;
+    &__container-datos {
 
         width: 100%;
 
@@ -57,22 +55,152 @@
         margin: 0;
         margin-top: 4rem;
 
-        @include mobile {
+        @include tablet {
 
             background-color: $blanco;
 
             position: absolute;
             flex-direction: column;
+            align-items: center;
 
             gap: 0;
             top: 12rem;
             left: 0;
 
             margin: 0;
-
+            padding: 2rem 10rem;
             margin-left: -100%;
             transition: all .5s;
+
+            &> :last-child {
+
+
+                &> ::after {
+
+                    display: none;
+
+
+                }
+
+            }
+
+        }
+
+        @include mobile {
+
+            padding: 2rem 0rem;
+
+        }
+
+        &__btn-donar {
+
+            display: none;
+
+            @include tablet {
+
+                display: inline;
+                margin-top: 1rem ;
+                margin-bottom: 4rem ;
+
+            }
+
+            @include mobile {
+
+                font-size: 1.8rem;
+
+            }
+
+        }
+
+        &__contactos {
+
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+
+            @include tablet {
+
+                display: flex;
+            }
+
+            &> :nth-child(1) {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                p {
+
+                    font-size: 1.8rem;
+                    font-weight: $semi-bold;
+
+                }
+
+                img {
+
+                    width: 3rem;
+
+
+                }
+
+            }
+
+            &> :nth-child(2) {
+
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+
+                a {
+
+                    display: block;
+                    fill: $rojo;
+                    width: 6rem;
+                    height: 6rem;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &__container-menu {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 4rem;
+
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+
+        @include tablet {
+
+
+            flex-direction: column;
             list-style: none;
+
+            gap: 0;
+
+
+            &> :last-child {
+
+
+                &> ::after {
+
+                    display: none;
+
+
+                }
+
+            }
 
         }
 
@@ -80,44 +208,16 @@
 
             display: block;
 
-        }
+            @include tablet {
 
-    }
+                width: 100%;
 
-    &__link {
 
-        display: flex;
-        align-items: center;
-        font-size: 1.8rem;
-        font-weight: $bold;
-        gap: .4rem;
-        color: $negro;
-        padding: 0;
-        
-        
-        @include mobile {
-            
-            padding: 1rem 2rem;
+
+            }
 
         }
 
-        & span {
-
-            transform: rotate(90deg);
-            font-size: 1.6rem;
-
-        }
-
-    }
-
-    &__boton {
-
-        display: none;
-        font-size: 5rem;
-        
-        @include mobile {
-            display: block;
-        }
     }
 
     &__container-submenu {
@@ -128,10 +228,27 @@
             overflow: visible;
         }
 
-        @include mobile {
+        @include tablet {
+
+            padding: 0rem;
+
             &:hover .submenu {
                 overflow: auto;
             }
+
+            &> ::after {
+
+                content: "";
+                position: absolute;
+                height: .1rem;
+                left: 2rem;
+                right: 2rem;
+                bottom: 0;
+                background-color: $grisOscuro;
+
+
+            }
+
         }
 
 
@@ -157,17 +274,18 @@
 
             }
 
-            @include mobile {
+            @include tablet {
 
                 position: static;
                 list-style: none;
+
+                width: 100%;
+
                 margin: 0;
                 padding: 0;
                 height: 0;
                 overflow: hidden;
                 transition: all .3s;
-
-
 
             }
 
@@ -198,13 +316,56 @@
 
     }
 
+    &__link {
+
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-weight: $bold;
+        gap: .4rem;
+        color: $negro;
+        padding: 0;
+
+
+        @include tablet {
+
+            padding: 2rem 2rem;
+            justify-content: space-between;
+
+        }
+
+        & span {
+
+            transform: rotate(90deg);
+            font-size: 1.6rem;
+
+            @include tablet {
+
+                font-size: 2.4rem;
+
+            }
+
+        }
+
+    }
+
+    &__boton {
+
+        display: none;
+        font-size: 5rem;
+
+        @include tablet {
+            display: block;
+        }
+    }
+
 }
 
 .btn-donar {
 
     position: absolute;
-    top: -2rem;
-    right: 0px;
+    top: 0rem;
+    right: 2rem;
 
     font-size: 1.8rem;
 
@@ -212,7 +373,7 @@
 
     z-index: -1;
 
-    @include mobile {
+    @include tablet {
         top: 12rem;
         right: 0rem;
     }

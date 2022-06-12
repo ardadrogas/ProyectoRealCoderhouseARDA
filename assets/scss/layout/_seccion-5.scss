@@ -11,13 +11,7 @@
     text-align: center;
 
     @include tablet {
-
-        // padding: 10rem;
-
-    }
-
-    @include mobile {
-        height: calc(100vh - 12rem);
+        height: auto;
     }
 
     &__container {
@@ -32,6 +26,19 @@
 
         width: 100%;
         max-width: 128rem;
+
+        @include tablet {
+
+            gap: 4rem;
+            padding: 4rem 8rem;
+
+        }
+
+        @include mobile {
+
+            padding: 4rem 3rem;
+
+        }
 
     }
 
@@ -48,37 +55,33 @@
 
         @include tablet {
 
-            // font-size: 5.2rem;
+            font-size: 3.8rem;
 
         }
 
         @include mobile {
-            font-size: 3.2rem;
+            font-size: 2.4rem;
         }
 
         &:before {
 
             position: absolute;
-            bottom: 0;
-            left: 1rem;
-            right: -5rem;
+            bottom: -.5rem;
+            left: -1rem;
+            right: -1rem;
 
-            height: 3rem;
+            height: 2.5rem;
             content: "";
             background-color: $rojo;
             z-index: -1;
 
             @include tablet {
-                // left: -4rem;
-                // right: 3rem;
+                bottom: -.8rem;
             }
 
             @include mobile {
-
-                left: -3.5rem;
-                right: 2.5rem;
-
-
+                bottom: -1rem;
+                height: 2rem;
             }
 
         }
@@ -88,6 +91,14 @@
     &__descripcion {
 
         font-size: 2.8rem;
+
+        @include tablet {
+            font-size: 2.4rem;
+        }
+
+        @include mobile {
+            font-size: 1.8rem;
+        }
 
     }
 
@@ -101,9 +112,10 @@
 
         margin-top: 4rem;
 
-        @include mobile {
+        @include tablet {
 
             flex-direction: column;
+            gap: 6rem;
 
         }
 
@@ -115,6 +127,10 @@
             justify-content: center;
             gap: 8rem;
 
+            @include tablet {
+                gap: 4rem;
+            }
+
             &__item {
 
                 display: flex;
@@ -123,9 +139,17 @@
                 justify-content: center;
                 gap: 2.8rem;
 
+                @include tablet {
+                    gap: 2rem;
+                }
+
                 img {
 
                     width: 5rem;
+
+                    @include tablet {
+                        width: 4rem;
+                    }
 
                 }
 
@@ -135,19 +159,42 @@
                     font-weight: $semi-bold;
                     margin-top: 1rem;
 
+                    @include tablet {
+
+                        font-size: 2.4rem;
+
+                    }
+
                 }
 
             }
 
             & :last-child {
 
+                width: 100%;
+
                 flex-direction: row;
                 gap: 8.8rem;
+
+                @include tablet {
+
+                    gap: 0;
+                    justify-content: space-between;
+
+                }
+
+                @include mobile {
+                    justify-content: space-evenly;
+                }
 
                 a {
 
                     width: 8rem;
                     fill: $rojo;
+
+                    @include tablet {
+                        width: 6rem;
+                    }
 
                 }
 
@@ -166,6 +213,13 @@
             width: 55rem;
 
             background-color: $blanco;
+
+            @include mobile {
+
+                width: 100%;
+                padding: 2rem;
+
+            }
 
             &__item {
 
@@ -211,6 +265,16 @@
 
         }
 
+    }
+
+
+    &__btn {
+
+        @include tablet {
+
+            font-size: 1.8rem;
+
+        }
     }
 
 }
