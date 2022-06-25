@@ -449,6 +449,11 @@ h4 {
   100% {
     background-size: 100% 2rem; } }
 
+::-webkit-scrollbar {
+  width: 10px; }
+  ::-webkit-scrollbar-thumb {
+    background-color: #CE0000; }
+
 /** UI **/
 .redes {
   position: fixed;
@@ -495,8 +500,7 @@ h4 {
       .header__container {
         padding: 2rem 4rem; } }
   .header .container-logo {
-    align-self: center;
-    height: 100%; }
+    align-self: center; }
     .header .container-logo img {
       width: auto;
       height: 100%; }
@@ -1420,6 +1424,238 @@ h4 {
     .seccion-5__btn {
       font-size: 1.8rem; } }
 
+.comision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 10rem 0; }
+  .comision__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 128rem; }
+    .comision__container__atras {
+      align-self: flex-start; }
+      .comision__container__atras a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.4rem;
+        font-weight: 600; }
+        .comision__container__atras a span {
+          color: red;
+          font-size: 4rem; }
+    .comision__container__texto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      padding: 0rem 13rem; }
+      .comision__container__texto__titulo {
+        position: relative;
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase; }
+        .comision__container__texto__titulo:before {
+          position: absolute;
+          bottom: 0;
+          left: -2rem;
+          right: -2rem;
+          height: 2rem;
+          content: "";
+          background-color: #CE0000;
+          z-index: -1; }
+          @media (max-width: 768px) {
+            .comision__container__texto__titulo:before {
+              height: 2rem;
+              bottom: .7rem; } }
+          @media (max-width: 480px) {
+            .comision__container__texto__titulo:before {
+              left: -3.5rem;
+              right: 2.5rem; } }
+      .comision__container__texto__subtitulo {
+        position: relative;
+        font-size: 3.6rem;
+        font-weight: 600; }
+        .comision__container__texto__subtitulo:before {
+          position: absolute;
+          bottom: 0;
+          left: 44rem;
+          right: 12rem;
+          height: 2rem;
+          content: "";
+          background-color: #CE0000;
+          z-index: -1; }
+          @media (max-width: 768px) {
+            .comision__container__texto__subtitulo:before {
+              height: 2rem;
+              bottom: .7rem; } }
+          @media (max-width: 480px) {
+            .comision__container__texto__subtitulo:before {
+              left: -3.5rem;
+              right: 2.5rem; } }
+      .comision__container__texto__descripcion {
+        font-size: 2.8rem;
+        font-weight: 500;
+        text-align: center; }
+        .comision__container__texto__descripcion span {
+          font-weight: 900; }
+    .comision__container__elementos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6rem;
+      margin-top: 10rem;
+      margin-bottom: 30rem; }
+      .comision__container__elementos__item-izq {
+        position: relative;
+        display: flex;
+        background-color: #FFFFFF;
+        height: 50rem;
+        padding: 3rem 6rem; }
+        .comision__container__elementos__item-izq:before {
+          position: absolute;
+          top: 14rem;
+          left: 7rem;
+          bottom: 3rem;
+          width: 6rem;
+          content: "";
+          background-color: #CE0000; }
+          @media (max-width: 768px) {
+            .comision__container__elementos__item-izq:before {
+              height: 2rem;
+              bottom: .7rem; } }
+          @media (max-width: 480px) {
+            .comision__container__elementos__item-izq:before {
+              left: -3.5rem;
+              right: 2.5rem; } }
+        .comision__container__elementos__item-izq__foto {
+          position: relative;
+          align-self: flex-start;
+          margin-left: 4rem; }
+        .comision__container__elementos__item-izq__container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .comision__container__elementos__item-izq__container__s1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; }
+            .comision__container__elementos__item-izq__container__s1__nombre {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 3.2rem;
+              font-weight: 700;
+              color: #FFFFFF;
+              width: 43rem;
+              height: 6.4rem;
+              background-color: #CE0000; }
+            .comision__container__elementos__item-izq__container__s1__redes {
+              display: flex;
+              align-items: center;
+              justify-items: flex-end;
+              gap: 4rem; }
+              .comision__container__elementos__item-izq__container__s1__redes a {
+                display: flex;
+                align-items: center;
+                width: 4rem;
+                fill: #545454; }
+                .comision__container__elementos__item-izq__container__s1__redes a:hover {
+                  fill: #CE0000; }
+        .comision__container__elementos__item-izq__cargo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-self: flex-start;
+          font-size: 2.4rem;
+          font-weight: 600;
+          color: #FFFFFF;
+          background-color: #545454;
+          height: 5.7rem;
+          padding: 0rem 5rem; }
+        .comision__container__elementos__item-izq__descripcion {
+          font-size: 2rem;
+          padding: 4rem 3rem; }
+        .comision__container__elementos__item-izq__boton {
+          font-size: 1.8rem;
+          padding: 1rem 4rem; }
+      .comision__container__elementos__item-der {
+        position: relative;
+        display: flex;
+        background-color: #FFFFFF;
+        height: 50rem;
+        padding: 3rem 6rem; }
+        .comision__container__elementos__item-der:before {
+          position: absolute;
+          top: 14rem;
+          right: 7rem;
+          bottom: 3rem;
+          width: 6rem;
+          content: "";
+          background-color: #CE0000; }
+          @media (max-width: 768px) {
+            .comision__container__elementos__item-der:before {
+              height: 2rem;
+              bottom: .7rem; } }
+          @media (max-width: 480px) {
+            .comision__container__elementos__item-der:before {
+              left: -3.5rem;
+              right: 2.5rem; } }
+        .comision__container__elementos__item-der__foto {
+          position: relative;
+          align-self: flex-start;
+          margin-right: 4rem; }
+        .comision__container__elementos__item-der__container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .comision__container__elementos__item-der__container__s1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; }
+            .comision__container__elementos__item-der__container__s1__nombre {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 3.2rem;
+              font-weight: 700;
+              color: #FFFFFF;
+              width: 43rem;
+              height: 6.4rem;
+              background-color: #CE0000; }
+            .comision__container__elementos__item-der__container__s1__redes {
+              display: flex;
+              align-items: center;
+              justify-items: flex-end;
+              gap: 4rem; }
+              .comision__container__elementos__item-der__container__s1__redes a {
+                display: flex;
+                align-items: center;
+                width: 4rem;
+                fill: #545454; }
+                .comision__container__elementos__item-der__container__s1__redes a:hover {
+                  fill: #CE0000; }
+        .comision__container__elementos__item-der__cargo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-self: flex-end;
+          font-size: 2.4rem;
+          font-weight: 600;
+          color: #FFFFFF;
+          background-color: #545454;
+          height: 5.7rem;
+          padding: 0rem 5rem; }
+        .comision__container__elementos__item-der__descripcion {
+          font-size: 2rem;
+          padding: 4rem 3rem; }
+        .comision__container__elementos__item-der__boton {
+          font-size: 1.8rem;
+          padding: 1rem 4rem; }
+
 .footer {
   position: relative;
   width: 100vw;
@@ -1464,26 +1700,9 @@ h4 {
           justify-content: flex-start;
           gap: 3rem; } }
       .footer__container > :nth-child(1) a {
-        position: relative;
-        font-size: 4.8rem;
-        text-shadow: -2px -2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, 2px 2px 0 #FFFFFF;
-        color: #000000;
-        font-weight: 900; }
-        .footer__container > :nth-child(1) a:before {
-          position: absolute;
-          left: -1rem;
-          right: -1rem;
-          bottom: -.5rem;
-          height: 3rem;
-          content: "";
-          background-color: #CE0000;
-          z-index: -1; }
-          @media (max-width: 768px) {
-            .footer__container > :nth-child(1) a:before {
-              bottom: -.8rem; } }
-          @media (max-width: 480px) {
-            .footer__container > :nth-child(1) a:before {
-              bottom: -1rem; } }
+        position: relative; }
+        .footer__container > :nth-child(1) a :hover {
+          fill: #CE0000; }
       .footer__container > :nth-child(1) p {
         width: 19rem; }
     @media (max-width: 480px) {
@@ -1516,7 +1735,7 @@ h4 {
           .footer__container :nth-child(5) a {
             width: 4.4rem; } }
         .footer__container :nth-child(5) a :hover {
-          fill: #e5e5e5; }
+          fill: #CE0000; }
     .footer__container > img {
       position: absolute;
       top: -10rem;
@@ -1548,5 +1767,3 @@ h4 {
       font-size: 1.6rem;
       font-weight: 500;
       color: #FFFFFF; }
-      .footer__item a :hover {
-        color: #e5e5e5; }

@@ -75,39 +75,13 @@
 
                 position: relative;
 
-                font-size: 4.8rem;
-                text-shadow: -2px -2px 0 $blanco, 2px -2px 0 $blanco, -2px 2px 0 $blanco, 2px 2px 0 $blanco;
-                color: $negro;
-                font-weight: $black;
+                
+                & :hover {
 
-                &:before {
+                    fill: $rojo;
 
-                    position: absolute;
-                    left: -1rem;
-                    right: -1rem;
-                    bottom: -.5rem;
-                    height: 3rem;
-                    content: "";
-                    background-color: $rojo;
-                    z-index: -1;
-
-                    @include tablet {
-                        bottom: -.8rem;
-                        // left: -4rem;
-                        // right: 3rem;
-                    }
-
-                    @include mobile {
-                        bottom: -1rem;
-
-                        // left: -3.5rem;
-                        // right: 2.5rem;
-                        // bottom: 0;
-
-                    }
 
                 }
-
 
             }
 
@@ -173,7 +147,7 @@
 
                 & :hover {
 
-                    fill: $gris;
+                    fill: $rojo;
 
 
                 }
@@ -236,14 +210,6 @@
             font-size: 1.6rem;
             font-weight: $medium;
             color: $blanco;
-
-            & :hover {
-
-                color: $gris;
-
-
-            }
-
 
         }
 

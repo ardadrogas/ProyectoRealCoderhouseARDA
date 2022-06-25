@@ -1,0 +1,82 @@
+[
+
+    {
+        "id": "1",
+        "nombre": "Gustavo Zbuczynski",
+        "cargo": "Presidente",
+        "resumen": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saepe accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "foto": "/assets/images/personas/gustavo.png",
+        "redes": {
+            "instagram": "https://www.instagram.com/gustavo_zbuczynski",
+            "twitter": "https://twitter.com/gustavo_zbuczynski",
+            "facebook": "https://www.facebook.com/gustavo.zbuczynski"
+        }
+    },
+    {
+        "id": "2",
+        "nombre": "Silvia Inchaurraga",
+        "cargo": "Secretaria General",
+        "resumen": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saepe accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "foto": "/assets/images/personas/silvia.png",
+        "redes": {
+            "instagram": "https://www.instagram.com/gustavo_zbuczynski",
+            "twitter": "https://twitter.com/gustavo_zbuczynski",
+            "facebook": "https://www.facebook.com/gustavo.zbuczynski"
+        }
+    },
+    {
+        "id": "3",
+        "nombre": "Diego Posse",
+        "cargo": "Tesorero",
+        "resumen": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saepe accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "foto": "/assets/images/personas/diego.png",
+        "redes": {
+            "instagram": "https://www.instagram.com/gustavo_zbuczynski",
+            "twitter": "https://twitter.com/gustavo_zbuczynski",
+            "facebook": "https://www.facebook.com/gustavo.zbuczynski"
+        }
+    },
+    {
+        "id": "4",
+        "nombre": "Carlos Herbon",
+        "cargo": "Vocal",
+        "resumen": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saepe accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "foto": "/assets/images/personas/carlos.png",
+        "redes": {
+            "instagram": "https://www.instagram.com/gustavo_zbuczynski",
+            "twitter": "https://twitter.com/gustavo_zbuczynski",
+            "facebook": "https://www.facebook.com/gustavo.zbuczynski"
+        }
+    },
+    {
+        "id": "5",
+        "nombre": "Aníbal Aguaisol",
+        "cargo": "Vocal",
+        "resumen": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saepe accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "foto": "/assets/images/personas/anibal.png",
+        "redes": {
+            "instagram": "https://www.instagram.com/gustavo_zbuczynski",
+            "twitter": "https://twitter.com/gustavo_zbuczynski",
+            "facebook": "https://www.facebook.com/gustavo.zbuczynski"
+        }
+    },
+    {
+        "id": "6",
+        "nombre": "Andrea Celentano",
+        "cargo": "Vocal",
+        "resumen": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saepe accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quam nemo excepturi voluptatum quibusdam minima voluptate vero delectus. Distinctio, veritatis! Possimus, saece accusamus! Culpa obcaecati nulla velit qui incidunt eveniet aut corrupti voluptatum consequuntur nemo eligendi officia, architecto quasi rem.",
+        "foto": "/assets/images/personas/andrea.png",
+        "redes": {
+            "instagram": "https://www.instagram.com/gustavo_zbuczynski",
+            "twitter": "https://twitter.com/gustavo_zbuczynski",
+            "facebook": "https://www.facebook.com/gustavo.zbuczynski"
+        }
+    }
+
+]

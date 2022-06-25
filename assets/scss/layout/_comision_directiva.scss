@@ -1,0 +1,417 @@
+.comision {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    margin: 10rem 0;
+
+    &__container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        max-width: 128rem;
+
+        &__atras {
+
+            align-self: flex-start;
+
+            a {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 2.4rem;
+                font-weight: $semi-bold;
+
+                span {
+                    color: red;
+                    font-size: 4rem;
+                }
+
+            }
+
+
+        }
+
+        &__texto {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+
+            padding: 0rem 13rem;
+
+            &__titulo {
+
+                position: relative;
+                font-size: 4rem;
+                font-weight: $black;
+                text-transform: uppercase;
+
+                &:before {
+
+                    position: absolute;
+                    bottom: 0;
+                    left: -2rem;
+                    right: -2rem;
+                    height: 2rem;
+                    content: "";
+                    background-color: $rojo;
+                    z-index: -1;
+
+                    @include tablet {
+                        height: 2rem;
+                        bottom: .7rem;
+                    }
+
+                    @include mobile {
+
+                        left: -3.5rem;
+                        right: 2.5rem;
+
+
+                    }
+
+                }
+
+            }
+
+            &__subtitulo {
+
+                position: relative;
+                font-size: 3.6rem;
+                font-weight: $semi-bold;
+
+                &:before {
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 44rem;
+                    right: 12rem;
+                    height: 2rem;
+                    content: "";
+                    background-color: $rojo;
+                    z-index: -1;
+
+                    @include tablet {
+                        height: 2rem;
+                        bottom: .7rem;
+                    }
+
+                    @include mobile {
+
+                        left: -3.5rem;
+                        right: 2.5rem;
+
+
+                    }
+
+                }
+
+            }
+
+            &__descripcion {
+
+                font-size: 2.8rem;
+                font-weight: $medium;
+                text-align: center;
+
+                span {
+
+                    font-weight: $black;
+
+                }
+
+            }
+
+        }
+
+        &__elementos {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6rem;
+
+            margin-top: 10rem;
+            margin-bottom: 30rem;
+
+            &__item-izq {
+
+                position: relative;
+                display: flex;
+
+                background-color: $blanco;
+
+                height: 50rem;
+                padding: 3rem 6rem;
+
+                &:before {
+
+                    position: absolute;
+                    top: 14rem;
+                    left: 7rem;
+                    bottom: 3rem;
+                    width: 6rem;
+                    content: "";
+                    background-color: $rojo;
+
+                    @include tablet {
+                        height: 2rem;
+                        bottom: .7rem;
+                    }
+
+                    @include mobile {
+
+                        left: -3.5rem;
+                        right: 2.5rem;
+
+
+                    }
+
+                }
+
+                &__foto{
+
+                    position: relative;
+                    align-self: flex-start;
+
+                   margin-left: 4rem;
+    
+
+                }
+
+
+                &__container {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    &__s1 {
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &__nombre {
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            font-size: 3.2rem;
+                            font-weight: $bold;
+                            color: $blanco;
+
+                            width: 43rem;
+                            height: 6.4rem;
+
+
+                            background-color: $rojo;
+
+                        }
+
+                        &__redes {
+
+                            display: flex;
+                            align-items: center;
+                            justify-items: flex-end;
+                            gap: 4rem;
+
+                            a {
+                                display: flex;
+                                align-items: center;
+                                width: 4rem;
+                                fill: #545454;
+                                
+                                &:hover{
+
+                                    fill: $rojo;
+
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
+                &__cargo {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-self: flex-start;
+
+                    font-size: 2.4rem;
+                    font-weight: $semi-bold;
+                    color: $blanco;
+                    background-color: #545454;
+
+                    height: 5.7rem;
+
+                    padding: 0rem 5rem;
+
+                }
+
+                &__descripcion{
+
+                    font-size: 2rem;
+                    padding: 4rem 3rem;
+
+                }
+
+                &__boton{
+                    font-size: 1.8rem;
+                    padding: 1rem 4rem;
+                }
+
+            }
+
+            &__item-der {
+
+                position: relative;
+                display: flex;
+
+                background-color: $blanco;
+
+                height: 50rem;
+                padding: 3rem 6rem;
+
+                &:before {
+
+                    position: absolute;
+                    top: 14rem;
+                    right: 7rem;
+                    bottom: 3rem;
+                    width: 6rem;
+                    content: "";
+                    background-color: $rojo;
+
+                    @include tablet {
+                        height: 2rem;
+                        bottom: .7rem;
+                    }
+
+                    @include mobile {
+
+                        left: -3.5rem;
+                        right: 2.5rem;
+
+
+                    }
+
+                }
+
+                &__foto{
+
+                    position: relative;
+                    align-self: flex-start;
+
+                   margin-right: 4rem;
+    
+
+                }
+
+
+                &__container {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    &__s1 {
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &__nombre {
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            font-size: 3.2rem;
+                            font-weight: $bold;
+                            color: $blanco;
+
+                            width: 43rem;
+                            height: 6.4rem;
+
+
+                            background-color: $rojo;
+
+                        }
+
+                        &__redes {
+
+                            display: flex;
+                            align-items: center;
+                            justify-items: flex-end;
+                            gap: 4rem;
+
+                            a {
+                                display: flex;
+                                align-items: center;
+                                width: 4rem;
+                                fill: #545454;
+
+                                &:hover{
+
+                                    fill: $rojo;
+
+                                }
+
+                            }
+                        }
+
+                    }
+
+                }
+
+                &__cargo {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-self: flex-end;
+
+                    font-size: 2.4rem;
+                    font-weight: $semi-bold;
+                    color: $blanco;
+                    background-color: #545454;
+
+                    height: 5.7rem;
+
+                    padding: 0rem 5rem;
+
+                }
+
+                &__descripcion{
+
+                    font-size: 2rem;
+                    padding: 4rem 3rem;
+
+                }
+
+                &__boton{
+                    font-size: 1.8rem;
+                    padding: 1rem 4rem;
+                }
+
+            }
+
+        }
+
+    }
+
+}
