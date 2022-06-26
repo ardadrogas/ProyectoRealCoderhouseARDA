@@ -29,19 +29,30 @@
 
         }
 
+        @include mobile{
+                
+                padding: 2rem;
+    
+        }
+
     }
 
 
     & .container-logo {
 
-        // width: 24rem;
-        align-self: center;
-        // height: 56px;
+        @include mobile{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+        }
 
         img {
 
-            width: auto;
-            height: 100%;
+            width: 12.7rem;
+            // height: 100%;
 
         }
 
@@ -355,7 +366,9 @@
         font-size: 5rem;
 
         @include tablet {
+            position: absolute;
             display: block;
+            left: 4rem;
         }
     }
 

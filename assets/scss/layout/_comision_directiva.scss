@@ -7,6 +7,13 @@
     width: 100%;
     margin: 10rem 0;
 
+    @include mobile{
+
+        margin: 5rem 0;
+
+
+    }
+
     &__container {
 
         display: flex;
@@ -14,11 +21,30 @@
         align-items: center;
         gap: 1rem;
 
-        max-width: 128rem;
+        width: 100%;
+        max-width: 124rem;
+
+        @include tablet {
+
+            max-width: 70rem;
+
+        }
+
+        @include mobile {
+
+            max-width: 35rem;
+
+        }
 
         &__atras {
 
             align-self: flex-start;
+
+            @include tablet {
+
+                display: none;
+
+            }
 
             a {
 
@@ -48,6 +74,18 @@
 
             padding: 0rem 13rem;
 
+            @include tablet {
+
+                padding: 0rem 6rem;
+
+            }
+
+            @include mobile {
+
+                padding: 0rem 2rem;
+
+            }
+
             &__titulo {
 
                 position: relative;
@@ -55,28 +93,30 @@
                 font-weight: $black;
                 text-transform: uppercase;
 
+                @include mobile {
+
+                    font-size: 2.6rem;
+
+                }
+
                 &:before {
 
                     position: absolute;
-                    bottom: 0;
+                    bottom: -0.4rem;
                     left: -2rem;
                     right: -2rem;
-                    height: 2rem;
+                    height: 2.6rem;
                     content: "";
                     background-color: $rojo;
                     z-index: -1;
 
-                    @include tablet {
-                        height: 2rem;
-                        bottom: .7rem;
-                    }
 
                     @include mobile {
 
-                        left: -3.5rem;
-                        right: 2.5rem;
-
-
+                        bottom: 0rem;
+                        left: -1rem;
+                        right: -1rem;
+                        height: 1.3rem;
                     }
 
                 }
@@ -89,26 +129,27 @@
                 font-size: 3.6rem;
                 font-weight: $semi-bold;
 
+                @include mobile {
+
+                    font-size: 2.4rem;
+
+                }
+
                 &:before {
 
                     position: absolute;
-                    bottom: 0;
-                    left: 44rem;
-                    right: 12rem;
-                    height: 2rem;
+                    bottom: -0.4rem;
+                    right: -1rem;
+                    width: 2.2rem;
+                    height: 2.2rem;
                     content: "";
                     background-color: $rojo;
                     z-index: -1;
 
-                    @include tablet {
-                        height: 2rem;
-                        bottom: .7rem;
-                    }
-
                     @include mobile {
-
-                        left: -3.5rem;
-                        right: 2.5rem;
+                        right: -0.5rem;
+                        width: 1.6rem;
+                        height: 1.6rem;
 
 
                     }
@@ -122,6 +163,12 @@
                 font-size: 2.8rem;
                 font-weight: $medium;
                 text-align: center;
+
+                @include mobile{
+
+                    font-size: 2rem;
+
+                }
 
                 span {
 
@@ -140,8 +187,13 @@
             align-items: center;
             gap: 6rem;
 
+            width: 100%;
             margin-top: 10rem;
             margin-bottom: 30rem;
+
+            @include mobile{
+                margin-bottom: 10rem;
+            }
 
             &__item-izq {
 
@@ -152,6 +204,15 @@
 
                 height: 50rem;
                 padding: 3rem 6rem;
+
+                @include tablet {
+
+                    flex-direction: column;
+                    height: auto;
+
+                    padding: 4rem 0rem 2rem 0rem;
+
+                }
 
                 &:before {
 
@@ -164,39 +225,84 @@
                     background-color: $rojo;
 
                     @include tablet {
-                        height: 2rem;
-                        bottom: .7rem;
+                        top: 3rem;
+                        left: 11rem;
+                        bottom: auto;
+                        height: 25rem;
                     }
 
                     @include mobile {
 
-                        left: -3.5rem;
-                        right: 2.5rem;
-
+                        width: 3rem;
+                        left: 2rem;
+                        height: 12rem;
 
                     }
 
                 }
 
-                &__foto{
+                &__foto {
 
                     position: relative;
                     align-self: flex-start;
 
-                   margin-left: 4rem;
-    
+                    width: 100%;
+                    margin-left: 4rem;
+
+
+                    @include tablet {
+                        margin-left: 0;
+                        overflow: hidden;
+                        align-self: center;
+                    }
+
+                    @include mobile {
+
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        width: 26.5rem;
+                        height: 25rem;
+
+                    }
+
+                    img {
+
+                        width: auto;
+                        margin: 0 auto;
+
+                        @include mobile {
+                            width: 100%;
+                        }
+
+                    }
 
                 }
 
 
                 &__container {
 
+                    position: relative;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
 
+                    @include tablet {
+
+                        top: -4.5rem;
+
+                    }
+
+                    @include mobile {
+
+                        top: -1.5rem;
+
+
+                    }
+
                     &__s1 {
 
+                        position: relative;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
@@ -214,8 +320,23 @@
                             width: 43rem;
                             height: 6.4rem;
 
-
                             background-color: $rojo;
+
+                            @include tablet {
+
+                                width: 50rem;
+                                padding-left: 5rem;
+
+                            }
+
+                            @include mobile {
+
+                                font-size: 1.6rem;
+                                width: 25rem;
+                                height: 2.7rem;
+                                padding-left: 2rem;
+
+                            }
 
                         }
 
@@ -226,13 +347,30 @@
                             justify-items: flex-end;
                             gap: 4rem;
 
+                            @include tablet {
+
+                                position: absolute;
+                                top: 7rem;
+                                right: 3rem;
+
+                            }
+
+                            @include mobile{
+                                justify-content: center;
+
+                                top: 8rem;
+                                left: 0;
+                                right: 0;
+
+                            }
+
                             a {
                                 display: flex;
                                 align-items: center;
                                 width: 4rem;
                                 fill: #545454;
-                                
-                                &:hover{
+
+                                &:hover {
 
                                     fill: $rojo;
 
@@ -256,22 +394,52 @@
                     color: $blanco;
                     background-color: #545454;
 
+                    width: 30rem;
                     height: 5.7rem;
 
-                    padding: 0rem 5rem;
+                    // padding-left: 5rem;
+
+                    @include tablet {
+
+                        width: 40rem;
+                        padding-left: 5rem;
+
+                    }
+
+                    @include mobile {
+
+                        font-size: 1.2rem;
+                        width: 20rem;
+                        height: 3.2rem;
+                        padding-left: 4rem;
+
+                    }
 
                 }
 
-                &__descripcion{
+                &__descripcion {
 
                     font-size: 2rem;
                     padding: 4rem 3rem;
 
+                    @include mobile {
+
+                        font-size: 1.4rem;
+                        padding: 8rem 3rem;
+                        padding-bottom: 3rem;
+                    }
+
                 }
 
-                &__boton{
+                &__boton {
                     font-size: 1.8rem;
                     padding: 1rem 4rem;
+                    
+                    @include mobile {
+
+                        font-size: 1.4rem;
+
+                    }
                 }
 
             }
@@ -280,11 +448,21 @@
 
                 position: relative;
                 display: flex;
+                flex-direction: row-reverse;
 
                 background-color: $blanco;
 
                 height: 50rem;
                 padding: 3rem 6rem;
+
+                @include tablet {
+
+                    flex-direction: column;
+                    height: auto;
+
+                    padding: 4rem 0rem 2rem 0rem;
+
+                }
 
                 &:before {
 
@@ -297,39 +475,79 @@
                     background-color: $rojo;
 
                     @include tablet {
-                        height: 2rem;
-                        bottom: .7rem;
+                        top: 3rem;
+                        left: 11rem;
+                        bottom: auto;
+                        height: 25rem;
                     }
 
                     @include mobile {
 
-                        left: -3.5rem;
-                        right: 2.5rem;
-
+                        width: 3rem;
+                        left: 2rem;
+                        height: 12rem;
 
                     }
 
                 }
 
-                &__foto{
+                &__foto {
 
                     position: relative;
                     align-self: flex-start;
 
-                   margin-right: 4rem;
-    
+                    width: 100%;
+                    margin-right: 4rem;
+
+
+                    @include tablet {
+                        margin-right: 0;
+                        overflow: hidden;
+                        align-self: center;
+                    }
+
+                    @include mobile {
+
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        width: 26.5rem;
+                        height: 25rem;
+
+                    }
+
+                    img {
+
+                        width: auto;
+                        margin: 0 auto;
+
+                        @include mobile {
+
+                            width: 100%;
+
+                        }
+
+                    }
 
                 }
 
 
                 &__container {
 
+                    position: relative;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
 
+                    @include tablet {
+
+                        top: -4.5rem;
+
+                    }
+
                     &__s1 {
 
+                        position: relative;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
@@ -347,8 +565,25 @@
                             width: 43rem;
                             height: 6.4rem;
 
-
                             background-color: $rojo;
+
+                            @include tablet {
+
+                                width: 50rem;
+                                padding-left: 5rem;
+
+                            }
+
+
+                            @include mobile {
+
+                                font-size: 1.6rem;
+                                width: 25rem;
+                                height: 2.7rem;
+                                padding-left: 2rem;
+
+                            }
+
 
                         }
 
@@ -359,13 +594,29 @@
                             justify-items: flex-end;
                             gap: 4rem;
 
+                            @include tablet {
+
+                                position: absolute;
+                                top: 7rem;
+                                right: 3rem;
+
+                            }
+                            @include mobile{
+                                justify-content: center;
+
+                                top: 8rem;
+                                left: 0;
+                                right: 0;
+
+                            }
+
                             a {
                                 display: flex;
                                 align-items: center;
                                 width: 4rem;
                                 fill: #545454;
 
-                                &:hover{
+                                &:hover {
 
                                     fill: $rojo;
 
@@ -390,22 +641,52 @@
                     color: $blanco;
                     background-color: #545454;
 
+                    width: 30rem;
                     height: 5.7rem;
 
-                    padding: 0rem 5rem;
+                    // padding-right: 5rem;
 
+                    @include tablet {
+
+                        align-self: flex-start;
+                        width: 40rem;
+                        padding-left: 5rem;
+
+                    }
+
+                    @include mobile {
+
+                        font-size: 1.2rem;
+                        width: 20rem;
+                        height: 3.2rem;
+                        padding-left: 4rem;
+
+                    }
                 }
 
-                &__descripcion{
+                &__descripcion {
 
                     font-size: 2rem;
                     padding: 4rem 3rem;
 
+                    @include mobile {
+
+                        font-size: 1.4rem;
+                        padding: 8rem 3rem;
+                        padding-bottom: 3rem;
+                    }
+
                 }
 
-                &__boton{
+                &__boton {
                     font-size: 1.8rem;
                     padding: 1rem 4rem;
+
+                    @include mobile {
+
+                        font-size: 1.4rem;
+
+                    }
                 }
 
             }

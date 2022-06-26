@@ -9,16 +9,14 @@ const getComisiones = async () => {
 
 getComisiones().then((personas) => {
   personas.map((persona) => {
-
-    if(persona.id % 2 != 0){
-
-    container.innerHTML += `
+    if (persona.id % 2 != 0) {
+      container.innerHTML += `
 
         <div class="comision__container__elementos__item-izq">
 
-            <img src="${persona.foto}" alt="${persona.nombre}"
-                class="comision__container__elementos__item-izq__foto">
-
+            <div class="comision__container__elementos__item-izq__foto">
+                <img src="${persona.foto}" alt="${persona.nombre}"/>
+            </div>
             <div class="comision__container__elementos__item-izq__container">
 
                 <div class="comision__container__elementos__item-izq__container__s1">
@@ -60,12 +58,15 @@ getComisiones().then((personas) => {
 
         </div>
         `;
-    }else{
-
-        container.innerHTML += `
+    } else {
+      container.innerHTML += `
 
         <div class="comision__container__elementos__item-der">
 
+            <div class="comision__container__elementos__item-der__foto">
+                <img src="${persona.foto}" alt="${persona.nombre}"/>
+            </div>
+            
             <div class="comision__container__elementos__item-der__container">
 
                 <div class="comision__container__elementos__item-der__container__s1">
@@ -105,14 +106,9 @@ getComisiones().then((personas) => {
 
             </div>
 
-            <img src="${persona.foto}" alt="${persona.nombre}"
-                class="comision__container__elementos__item-der__foto"/>
 
         </div>
         `;
-
     }
-    
   });
-
 });
