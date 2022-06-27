@@ -502,14 +502,17 @@ h4 {
     @media (max-width: 480px) {
       .header__container {
         padding: 2rem; } }
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .header .container-logo {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%; } }
   .header .container-logo img {
-    width: 12.7rem; }
+    width: 18.2rem; }
+    @media (max-width: 480px) {
+      .header .container-logo img {
+        width: 12.7rem; } }
   .header__container-datos {
     width: 100%;
     padding: 0rem;
@@ -564,7 +567,8 @@ h4 {
       .header__container-datos__contactos > :nth-child(2) {
         display: flex;
         align-items: center;
-        gap: 3rem; }
+        gap: 3rem;
+        padding-bottom: 2rem; }
         .header__container-datos__contactos > :nth-child(2) a {
           display: block;
           fill: #CE0000;
@@ -1837,6 +1841,144 @@ h4 {
           @media (max-width: 480px) {
             .comision__container__elementos__item-der__boton {
               font-size: 1.4rem; } }
+
+.seccion-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+  text-align: center; }
+  .seccion-6__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 10rem 10rem; }
+    @media (max-width: 768px) {
+      .seccion-6__container {
+        padding: 8rem 12rem; } }
+    @media (max-width: 480px) {
+      .seccion-6__container {
+        padding: 8rem 4rem; } }
+  .seccion-6__titulo {
+    font-size: 6.4rem;
+    font-weight: 900;
+    position: relative;
+    overflow: visible; }
+    @media (max-width: 768px) {
+      .seccion-6__titulo {
+        font-size: 6rem; } }
+    @media (max-width: 480px) {
+      .seccion-6__titulo {
+        font-size: 3.2rem; } }
+    .seccion-6__titulo span {
+      position: relative; }
+    .seccion-6__titulo span:before {
+      position: absolute;
+      bottom: 0;
+      left: -2rem;
+      right: -2rem;
+      height: 3rem;
+      content: "";
+      background-color: #CE0000;
+      z-index: -1; }
+      @media (max-width: 768px) {
+        .seccion-6__titulo span:before {
+          height: 2rem;
+          bottom: .7rem; } }
+      @media (max-width: 480px) {
+        .seccion-6__titulo span:before {
+          left: -3.5rem;
+          right: 2.5rem; } }
+  .seccion-6__subtitulo {
+    font-size: 3.6rem;
+    font-weight: 600; }
+    @media (max-width: 768px) {
+      .seccion-6__subtitulo {
+        font-size: 2.8rem; } }
+    @media (max-width: 480px) {
+      .seccion-6__subtitulo {
+        font-size: 2.4rem;
+        margin: 0rem 1rem; } }
+    .seccion-6__subtitulo span {
+      position: relative; }
+    .seccion-6__subtitulo span:before {
+      position: absolute;
+      bottom: 0rem;
+      width: 3rem;
+      right: -2rem;
+      height: 2rem;
+      content: "";
+      background-color: #CE0000;
+      z-index: -1; }
+      @media (max-width: 768px) {
+        .seccion-6__subtitulo span:before {
+          bottom: -.5rem; } }
+      @media (max-width: 480px) {
+        .seccion-6__subtitulo span:before {
+          bottom: -.7rem;
+          right: -2.2rem; } }
+  .seccion-6__descripcionimportante {
+    font-size: 2.8rem;
+    font-weight: 600; }
+    @media (max-width: 768px) {
+      .seccion-6__descripcionimportante {
+        font-size: 2.4rem; } }
+    @media (max-width: 480px) {
+      .seccion-6__descripcionimportante {
+        font-size: 1.8rem; } }
+  .seccion-6__descripcion {
+    font-size: 2.4rem;
+    font-weight: 500; }
+    @media (max-width: 768px) {
+      .seccion-6__descripcion {
+        font-size: 2.0rem; } }
+    @media (max-width: 480px) {
+      .seccion-6__descripcion {
+        font-size: 1.6rem; } }
+  .seccion-6__descripcion2 {
+    font-size: 3.6rem;
+    font-weight: 500; }
+    @media (max-width: 768px) {
+      .seccion-6__descripcion2 {
+        font-size: 2.8rem; } }
+    @media (max-width: 480px) {
+      .seccion-6__descripcion2 {
+        font-size: 1.8rem; } }
+  .seccion-6__titulo2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    position: relative;
+    overflow: visible; }
+    @media (max-width: 768px) {
+      .seccion-6__titulo2 {
+        font-size: 2.8rem; } }
+    @media (max-width: 480px) {
+      .seccion-6__titulo2 {
+        font-size: 2rem; } }
+    .seccion-6__titulo2 span {
+      position: relative; }
+    .seccion-6__titulo2 span:before {
+      position: absolute;
+      bottom: -1rem;
+      left: -2rem;
+      right: -2rem;
+      height: 2.5rem;
+      content: "";
+      background-color: #CE0000;
+      z-index: -1; }
+      @media (max-width: 768px) {
+        .seccion-6__titulo2 span:before {
+          height: 2rem; } }
+      @media (max-width: 480px) {
+        .seccion-6__titulo2 span:before {
+          left: 6rem;
+          bottom: -.5rem;
+          height: 1.2rem; } }
 
 .footer {
   position: relative;

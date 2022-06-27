@@ -29,10 +29,10 @@
 
         }
 
-        @include mobile{
-                
-                padding: 2rem;
-    
+        @include mobile {
+
+            padding: 2rem;
+
         }
 
     }
@@ -40,7 +40,7 @@
 
     & .container-logo {
 
-        @include mobile{
+        @include tablet {
 
             display: flex;
             align-items: center;
@@ -51,8 +51,13 @@
 
         img {
 
-            width: 12.7rem;
-            // height: 100%;
+            width: 18.2rem;
+
+            @include mobile {
+
+                width: 12.7rem;
+
+            }
 
         }
 
@@ -110,8 +115,8 @@
             @include tablet {
 
                 display: inline;
-                margin-top: 1rem ;
-                margin-bottom: 4rem ;
+                margin-top: 1rem;
+                margin-bottom: 4rem;
 
             }
 
@@ -163,6 +168,8 @@
                 display: flex;
                 align-items: center;
                 gap: 3rem;
+
+                padding-bottom: 2rem;
 
                 a {
 
