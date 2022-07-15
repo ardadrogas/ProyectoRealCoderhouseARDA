@@ -1,0 +1,223 @@
+.seccion-7 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
+
+    text-align: center;
+
+    &__container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+
+        padding: 10rem 10rem;
+
+        @include tablet {
+
+            padding: 8rem 12rem;
+
+        }
+
+        @include mobile {
+
+            padding: 8rem 4rem;
+
+        }
+
+    }
+
+    &__titulo {
+
+        font-size: 6.4rem;
+        font-weight: $black;
+        position: relative;
+        overflow: visible;
+
+        @include tablet {
+            font-size: 6rem;
+        }
+
+        @include mobile {
+            font-size: 3.2rem;
+        }
+
+        & span {
+
+            position: relative;
+
+        }
+
+        & span:before {
+
+            position: absolute;
+            bottom: 0;
+            left: -2rem;
+            right: -2rem;
+            height: 3rem;
+            content: "";
+            background-color: $rojo;
+            z-index: -1;
+
+            @include tablet {
+                height: 2rem;
+                bottom: .7rem;
+            }
+
+            @include mobile {
+
+                left: -3.5rem;
+                right: 2.5rem;
+
+
+            }
+
+        }
+
+    }
+
+    &__subtitulo {
+
+        font-size: 3.6rem;
+        font-weight: $semi-bold;
+
+        @include tablet {
+            font-size: 2.8rem;
+        }
+
+        @include mobile {
+            font-size: 2.4rem;
+            margin: 0rem 1rem
+        }
+
+        & span {
+
+            position: relative;
+
+        }
+
+        & span:before {
+
+            position: absolute;
+            bottom: 0rem;
+            width: 3rem;
+            right: -2rem;
+            height: 2rem;
+            content: "";
+            background-color: $rojo;
+            z-index: -1;
+
+
+            @include tablet {
+                bottom: -.5rem;
+            }
+
+            @include mobile {
+                bottom: -.7rem;
+                right: -2.2rem;
+            }
+
+        }
+
+    }
+
+    &__descripcionimportante {
+        font-size: 2.8rem;
+        font-weight: $semi-bold;
+
+        @include tablet {
+            font-size: 2.4rem;
+        }
+
+        @include mobile {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__descripcion {
+
+        font-size: 2.4rem;
+        font-weight: $medium;
+
+        @include tablet {
+            font-size: 2.0rem;
+        }
+
+        @include mobile {
+            font-size: 1.6rem;
+        }
+
+    }
+
+    &__descripcion2 {
+
+        font-size: 3.6rem;
+        font-weight: $medium;
+
+        @include tablet {
+            font-size: 2.8rem;
+        }
+
+        @include mobile {
+            font-size: 1.8rem;
+        }
+
+    }
+
+    &__titulo2 {
+
+        font-size: 3.6rem;
+        font-weight: $bold;
+        position: relative;
+        overflow: visible;
+
+        @include tablet {
+            font-size: 2.8rem;
+        }
+
+        @include mobile {
+            font-size: 2rem;
+        }
+
+        & span {
+
+            position: relative;
+
+        }
+
+        & span:before {
+
+            position: absolute;
+            bottom: -1rem;
+            left: -2rem;
+            right: -2rem;
+            height: 2.5rem;
+            content: "";
+            background-color: $rojo;
+            z-index: -1;
+
+            @include tablet {
+                height: 2rem;
+            }
+
+            @include mobile {
+
+                left: 6rem;
+                bottom: -.5rem;
+                height: 1.2rem;
+
+
+            }
+
+        }
+
+    }
+}
