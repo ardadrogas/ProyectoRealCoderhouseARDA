@@ -33,15 +33,50 @@
 
         }
 
+        &__atras {
+
+            align-self: flex-start;
+            padding-left: 18rem;
+    
+            @include tablet {
+    
+                display: none;
+    
+            }
+    
+            a {
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                font-size: 2.4rem;
+                font-weight: $semi-bold;
+    
+                span {
+                    color: red;
+                    font-size: 4rem;
+                }
+    
+            }
+    
+    
+        }
+
     }
 
     &__titulo {
 
-        font-size: 6.4rem;
+        font-size: 5rem;
         font-weight: $black;
         position: relative;
         overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
+        
+        
         @include tablet {
             font-size: 6rem;
         }
@@ -53,6 +88,7 @@
         & span {
 
             position: relative;
+            font-size: 6.4rem;
 
         }
 
@@ -84,68 +120,12 @@
 
     }
 
-    &__subtitulo {
-
-        font-size: 3.6rem;
-        font-weight: $semi-bold;
-
-        @include tablet {
-            font-size: 2.8rem;
-        }
-
-        @include mobile {
-            font-size: 2.4rem;
-            margin: 0rem 1rem
-        }
-
-        & span {
-
-            position: relative;
-
-        }
-
-        & span:before {
-
-            position: absolute;
-            bottom: 0rem;
-            width: 3rem;
-            right: -2rem;
-            height: 2rem;
-            content: "";
-            background-color: $rojo;
-            z-index: -1;
-
-
-            @include tablet {
-                bottom: -.5rem;
-            }
-
-            @include mobile {
-                bottom: -.7rem;
-                right: -2.2rem;
-            }
-
-        }
-
-    }
-
-    &__descripcionimportante {
-        font-size: 2.8rem;
-        font-weight: $semi-bold;
-
-        @include tablet {
-            font-size: 2.4rem;
-        }
-
-        @include mobile {
-            font-size: 1.8rem;
-        }
-    }
+    
 
     &__descripcion {
-
+        width: 75vw;
         font-size: 2.4rem;
-        font-weight: $medium;
+        font-weight: $regular;
 
         @include tablet {
             font-size: 2.0rem;
@@ -157,67 +137,257 @@
 
     }
 
-    &__descripcion2 {
-
-        font-size: 3.6rem;
-        font-weight: $medium;
-
-        @include tablet {
-            font-size: 2.8rem;
-        }
-
-        @include mobile {
-            font-size: 1.8rem;
-        }
-
+    &__tarjetas {
+        display: grid;
+        grid-template-columns: 100vw;
+        justify-items: center;
+        padding-bottom: 20rem;
+        gap: 20rem;
     }
 
-    &__titulo2 {
-
-        font-size: 3.6rem;
-        font-weight: $bold;
-        position: relative;
-        overflow: visible;
-
-        @include tablet {
-            font-size: 2.8rem;
-        }
-
-        @include mobile {
-            font-size: 2rem;
-        }
-
-        & span {
-
-            position: relative;
-
-        }
-
-        & span:before {
-
-            position: absolute;
-            bottom: -1rem;
-            left: -2rem;
-            right: -2rem;
-            height: 2.5rem;
-            content: "";
-            background-color: $rojo;
-            z-index: -1;
+    &__flecha-roja {
+        height: 8rem;
+        width: 10rem;
 
             @include tablet {
-                height: 2rem;
+                margin-bottom: 50px;
+            }
+    }
+
+    &__tarjeta-impar {
+        position: relative;
+        display: inline-block;
+        width: 48rem;
+        height: 24rem;
+        left: -50px;
+        padding: 4rem 1rem 7rem 1rem;
+        background-color: $crema;    
+        box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
+
+            @include tablet {
+                width: 75vw;
+                height: 20rem;
+                left: 0px;
             }
 
             @include mobile {
+                width: 80vw;
+                height: 20vh;
+                left: 0px;
+            }
+    }
 
-                left: 6rem;
-                bottom: -.5rem;
-                height: 1.2rem;
+    &__tarjeta-impar__año {
+        position: relative;
+        bottom: 120px;
+        left: 100px;
+        height: 10rem;
+        width: 24rem;
 
-
+            @include tablet {
+                height: 6rem;
+                width: 14rem;
+                position: relative;
+                left: 0px;
             }
 
-        }
+            @include mobile {
+                height: 6rem;
+                width: 14rem;
+                position: relative;
+                left: 0px;
+            }
+    }
 
+    &__tarjeta-impar__titulo {
+        position: relative;
+        text-align: left;
+        padding: 1rem;
+        bottom: 125px;
+
+            @include tablet {
+                bottom: 100px;
+            }
+
+            @include mobile {
+                bottom: 100px;
+            }
+    }
+
+    &__tarjeta-impar__descripcion {
+        position: relative;
+        text-align: left;
+        padding: 1rem;
+        bottom: 125px;
+
+            @include tablet {
+                bottom: 100px;
+            }
+
+            @include mobile {
+                bottom: 100px;
+            }
+    }
+
+    &__tarjeta-impar__rectangulo {
+        position: relative;
+        right: 345px;
+        bottom: 425px;
+        z-index: -1;
+
+            @include tablet {
+                height: 24vh;
+                width: 45vw;
+                left: 205px;
+            }
+
+            @include mobile {
+                height: 24vh;
+                width: 45vw;
+                left: 135px;
+            }
+    }
+
+    &__tarjeta-impar__rectangulo-hoy {
+        position: relative;
+        left: 400px;
+        bottom: 325px;
+        height: 38rem;
+        width: 55rem;
+        z-index: -1;
+
+            @include tablet {
+                height: 22vh;
+                width: 45vw;
+                left: 205px;
+                bottom: 400px;
+            }
+
+            @include mobile {
+                height: 22vh;
+                width: 45vw;
+                left: 135px;
+                bottom: 415px;
+            }
+    }
+
+    &__flecha-azul-uno {
+        position: relative;
+        bottom: 75px;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    &__flecha-azul-dos {
+        position: relative;
+        bottom: 35px;
+        right: 150px;
+        height: 10rem;
+        width: 10rem;
+        transform: rotate(265deg);
+
+            @include tablet {
+                position: relative;
+                right: 0px;
+            }
+
+            @include mobile {
+                position: relative;
+                right: 0px;
+            }
+    }
+
+    &__tarjeta-par {
+        position: relative;
+        display: inline-block;
+        width: 48rem;
+        height: 24rem;
+        right: -50px;
+        padding: 4rem 1rem 7rem 1rem;
+        background-color: $crema;    
+        box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
+
+            @include tablet {
+                width: 75vw;
+                height: 20rem;
+                left: 0px;
+            }
+
+            @include mobile {
+                width: 80vw;
+                height: 20vh;
+                left: 0px;
+            }
+    }
+
+    &__tarjeta-par__año {
+        position: relative;
+        bottom: 128px;
+        left: 100px;
+        height: 10rem;
+        width: 24rem;
+
+            @include tablet {
+                height: 6rem;
+                width: 14rem;
+                position: relative;
+                left: 0px;
+            }
+
+            @include mobile {
+                height: 6rem;
+                width: 14rem;
+                position: relative;
+                left: 0px;
+            }
+    }
+
+    &__tarjeta-par__titulo {
+        position: relative;
+        text-align: left;
+        padding: 1rem;
+        bottom: 125px;
+
+            @include tablet {
+                bottom: 100px;
+            }
+
+            @include mobile {
+                bottom: 100px;
+            }
+    }
+
+    &__tarjeta-par__descripcion {
+        position: relative;
+        text-align: left;
+        padding: 1rem;
+        bottom: 125px;
+
+            @include tablet {
+                bottom: 100px;
+            }
+
+            @include mobile {
+                bottom: 100px;
+            }
+    }
+
+    &__tarjeta-par__rectangulo {
+        position: relative;
+        left: 400px;
+        bottom: 425px;
+        z-index: -1;
+
+            @include tablet {
+                height: 24vh;
+                width: 45vw;
+                left: 205px;
+            }
+
+            @include mobile {
+                height: 24vh;
+                width: 45vw;
+                left: 135px;
+            }
     }
 }
