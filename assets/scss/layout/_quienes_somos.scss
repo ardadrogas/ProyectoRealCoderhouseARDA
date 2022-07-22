@@ -33,7 +33,38 @@
 
         }
 
+        &__atras {
+
+            align-self: flex-start;
+    
+            @include tablet {
+    
+                display: none;
+    
+            }
+    
+            a {
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                font-size: 2.4rem;
+                font-weight: $semi-bold;
+    
+                span {
+                    color: red;
+                    font-size: 4rem;
+                }
+    
+            }
+    
+    
+        }
+
     }
+
+
 
     &__titulo {
 

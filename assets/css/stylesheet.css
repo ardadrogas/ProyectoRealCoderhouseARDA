@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1864,6 +1865,20 @@ h4 {
     @media (max-width: 480px) {
       .seccion-6__container {
         padding: 8rem 4rem; } }
+    .seccion-6__container__atras {
+      align-self: flex-start; }
+      @media (max-width: 768px) {
+        .seccion-6__container__atras {
+          display: none; } }
+      .seccion-6__container__atras a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.4rem;
+        font-weight: 600; }
+        .seccion-6__container__atras a span {
+          color: red;
+          font-size: 4rem; }
   .seccion-6__titulo {
     font-size: 6.4rem;
     font-weight: 900;
@@ -1979,6 +1994,287 @@ h4 {
           left: 6rem;
           bottom: -.5rem;
           height: 1.2rem; } }
+
+.seccion-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+  text-align: center; }
+  .seccion-7__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 10rem 10rem; }
+    @media (max-width: 768px) {
+      .seccion-7__container {
+        padding: 8rem 12rem; } }
+    @media (max-width: 480px) {
+      .seccion-7__container {
+        padding: 8rem 4rem; } }
+    .seccion-7__container__atras {
+      align-self: flex-start;
+      padding-left: 18rem; }
+      @media (max-width: 768px) {
+        .seccion-7__container__atras {
+          display: none; } }
+      .seccion-7__container__atras a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.4rem;
+        font-weight: 600; }
+        .seccion-7__container__atras a span {
+          color: red;
+          font-size: 4rem; }
+  .seccion-7__titulo {
+    font-size: 5rem;
+    font-weight: 900;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    @media (max-width: 768px) {
+      .seccion-7__titulo {
+        font-size: 6rem; } }
+    @media (max-width: 480px) {
+      .seccion-7__titulo {
+        font-size: 3.2rem; } }
+    .seccion-7__titulo span {
+      position: relative;
+      font-size: 6.4rem; }
+    .seccion-7__titulo span:before {
+      position: absolute;
+      bottom: 0;
+      left: -2rem;
+      right: -2rem;
+      height: 3rem;
+      content: "";
+      background-color: #CE0000;
+      z-index: -1; }
+      @media (max-width: 768px) {
+        .seccion-7__titulo span:before {
+          height: 2rem;
+          bottom: .7rem; } }
+      @media (max-width: 480px) {
+        .seccion-7__titulo span:before {
+          left: -3.5rem;
+          right: 2.5rem; } }
+  .seccion-7__descripcion {
+    width: 75vw;
+    font-size: 2.4rem;
+    font-weight: 400; }
+    @media (max-width: 768px) {
+      .seccion-7__descripcion {
+        font-size: 2.0rem; } }
+    @media (max-width: 480px) {
+      .seccion-7__descripcion {
+        font-size: 1.6rem; } }
+  .seccion-7__tarjetas {
+    display: grid;
+    grid-template-columns: 100vw;
+    justify-items: center;
+    padding-bottom: 20rem;
+    gap: 20rem; }
+  .seccion-7__flecha-roja {
+    height: 8rem;
+    width: 10rem; }
+    @media (max-width: 768px) {
+      .seccion-7__flecha-roja {
+        margin-bottom: 50px; } }
+  .seccion-7__tarjeta-impar {
+    position: relative;
+    display: inline-block;
+    width: 48rem;
+    height: 24rem;
+    left: -50px;
+    padding: 4rem 1rem 7rem 1rem;
+    background-color: #FFF8F8;
+    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-impar {
+        width: 75vw;
+        height: 20rem;
+        left: 0px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-impar {
+        width: 80vw;
+        height: 20vh;
+        left: 0px; } }
+  .seccion-7__tarjeta-impar__año {
+    position: relative;
+    bottom: 120px;
+    left: 100px;
+    height: 10rem;
+    width: 24rem; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-impar__año {
+        height: 6rem;
+        width: 14rem;
+        position: relative;
+        left: 0px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-impar__año {
+        height: 6rem;
+        width: 14rem;
+        position: relative;
+        left: 0px; } }
+  .seccion-7__tarjeta-impar__titulo {
+    position: relative;
+    text-align: left;
+    padding: 1rem;
+    bottom: 125px; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-impar__titulo {
+        bottom: 100px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-impar__titulo {
+        bottom: 100px; } }
+  .seccion-7__tarjeta-impar__descripcion {
+    position: relative;
+    text-align: left;
+    padding: 1rem;
+    bottom: 125px; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-impar__descripcion {
+        bottom: 100px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-impar__descripcion {
+        bottom: 100px; } }
+  .seccion-7__tarjeta-impar__rectangulo {
+    position: relative;
+    right: 345px;
+    bottom: 425px;
+    z-index: -1; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-impar__rectangulo {
+        height: 24vh;
+        width: 45vw;
+        left: 205px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-impar__rectangulo {
+        height: 24vh;
+        width: 45vw;
+        left: 135px; } }
+  .seccion-7__tarjeta-impar__rectangulo-hoy {
+    position: relative;
+    left: 400px;
+    bottom: 325px;
+    height: 38rem;
+    width: 55rem;
+    z-index: -1; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-impar__rectangulo-hoy {
+        height: 22vh;
+        width: 45vw;
+        left: 205px;
+        bottom: 400px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-impar__rectangulo-hoy {
+        height: 22vh;
+        width: 45vw;
+        left: 135px;
+        bottom: 415px; } }
+  .seccion-7__flecha-azul-uno {
+    position: relative;
+    bottom: 75px;
+    height: 10rem;
+    width: 10rem; }
+  .seccion-7__flecha-azul-dos {
+    position: relative;
+    bottom: 35px;
+    right: 150px;
+    height: 10rem;
+    width: 10rem;
+    transform: rotate(265deg); }
+    @media (max-width: 768px) {
+      .seccion-7__flecha-azul-dos {
+        position: relative;
+        right: 0px; } }
+    @media (max-width: 480px) {
+      .seccion-7__flecha-azul-dos {
+        position: relative;
+        right: 0px; } }
+  .seccion-7__tarjeta-par {
+    position: relative;
+    display: inline-block;
+    width: 48rem;
+    height: 24rem;
+    right: -50px;
+    padding: 4rem 1rem 7rem 1rem;
+    background-color: #FFF8F8;
+    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-par {
+        width: 75vw;
+        height: 20rem;
+        left: 0px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-par {
+        width: 80vw;
+        height: 20vh;
+        left: 0px; } }
+  .seccion-7__tarjeta-par__año {
+    position: relative;
+    bottom: 128px;
+    left: 100px;
+    height: 10rem;
+    width: 24rem; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-par__año {
+        height: 6rem;
+        width: 14rem;
+        position: relative;
+        left: 0px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-par__año {
+        height: 6rem;
+        width: 14rem;
+        position: relative;
+        left: 0px; } }
+  .seccion-7__tarjeta-par__titulo {
+    position: relative;
+    text-align: left;
+    padding: 1rem;
+    bottom: 125px; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-par__titulo {
+        bottom: 100px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-par__titulo {
+        bottom: 100px; } }
+  .seccion-7__tarjeta-par__descripcion {
+    position: relative;
+    text-align: left;
+    padding: 1rem;
+    bottom: 125px; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-par__descripcion {
+        bottom: 100px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-par__descripcion {
+        bottom: 100px; } }
+  .seccion-7__tarjeta-par__rectangulo {
+    position: relative;
+    left: 400px;
+    bottom: 425px;
+    z-index: -1; }
+    @media (max-width: 768px) {
+      .seccion-7__tarjeta-par__rectangulo {
+        height: 24vh;
+        width: 45vw;
+        left: 205px; } }
+    @media (max-width: 480px) {
+      .seccion-7__tarjeta-par__rectangulo {
+        height: 24vh;
+        width: 45vw;
+        left: 135px; } }
 
 .footer {
   position: relative;
