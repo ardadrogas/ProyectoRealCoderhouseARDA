@@ -71,7 +71,7 @@
         &:before {
 
             position: absolute;
-            bottom: 0;
+            bottom: -0.5rem;
             left: -1rem;
             right: -4rem;
             height: 2.5rem;
@@ -85,8 +85,8 @@
 
             @include mobile {
 
-                                right: -2.5rem;
-                                bottom: -1rem;
+                right: -2.5rem;
+                bottom: -1rem;
 
             }
 

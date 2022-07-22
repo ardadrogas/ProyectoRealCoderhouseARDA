@@ -16,7 +16,7 @@
 
             container.innerHTML += `
     
-                <div class="seccion-4__grid__item">
+                <a href="${articulo.link}" class="seccion-4__grid__item">
     
                     <div class="seccion-4__grid__item__img">
                         <div class="seccion-4__grid__item__img__filtro"></div>
@@ -25,7 +25,7 @@
 
                     <h4 class="seccion-4__grid__item__titulo">${articulo.titulo}</h4>
     
-                </div>
+                </a>
     
             `;
 
