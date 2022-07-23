@@ -1,0 +1,442 @@
+.seccion-8 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
+
+    text-align: center;
+
+    &__container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+
+        padding: 10rem 10rem;
+
+        @include tablet {
+
+            padding: 8rem 12rem;
+
+        }
+
+        @include mobile {
+
+            padding: 8rem 4rem;
+
+        }
+
+        &__atras {
+
+            align-self: flex-start;
+
+            @include tablet {
+
+                display: none;
+
+            }
+
+            a {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 2.4rem;
+                font-weight: $semi-bold;
+
+                span {
+                    color: red;
+                    font-size: 4rem;
+                }
+
+            }
+
+
+        }
+
+    }
+
+
+
+    &__titulo {
+
+        font-size: 6.4rem;
+        font-weight: $black;
+        position: relative;
+        overflow: visible;
+
+        @include tablet {
+            font-size: 6rem;
+        }
+
+        @include mobile {
+            font-size: 3.2rem;
+        }
+
+        & span {
+
+            position: relative;
+
+        }
+
+        & span:before {
+
+            position: absolute;
+            bottom: 0;
+            left: -2rem;
+            right: -2rem;
+            height: 3rem;
+            content: "";
+            background-color: $rojo;
+            z-index: -1;
+
+            @include tablet {
+                height: 2rem;
+                bottom: .7rem;
+            }
+
+            @include mobile {
+
+                left: -3.5rem;
+                right: 2.5rem;
+
+
+            }
+
+        }
+
+    }
+
+
+    &__descripcion {
+
+        font-size: 2.4rem;
+        font-weight: $medium;
+        width: 80%;
+
+        @include tablet {
+            font-size: 2.0rem;
+        }
+
+        @include mobile {
+            font-size: 1.6rem;
+        }
+
+    }
+
+    &__titulo2 {
+
+        font-size: 3.6rem;
+        font-weight: $bold;
+        position: relative;
+        overflow: visible;
+
+        @include tablet {
+            font-size: 2.8rem;
+        }
+
+        @include mobile {
+            font-size: 2rem;
+        }
+
+        & span {
+
+            position: relative;
+
+        }
+
+        & span:before {
+
+            position: absolute;
+            bottom: -1rem;
+            left: -2rem;
+            right: -2rem;
+            height: 2.5rem;
+            content: "";
+            background-color: $rojo;
+            z-index: -1;
+
+            @include tablet {
+                height: 2rem;
+            }
+
+            @include mobile {
+
+                left: 6rem;
+                bottom: -.5rem;
+                height: 1.2rem;
+
+
+            }
+
+        }
+
+    }
+
+    &__btn-donar {
+        display: grid;
+        grid-template-areas: "btn1 btn2 btn3"
+            "oculto oculto oculto"
+            "oculto oculto oculto";
+        width: 80%;
+        margin-top: 4rem;
+        justify-items: center;
+
+        overflow: hidden;
+
+        @include tablet {
+            grid-template-areas: "btn1"
+                "btn2"
+                "btn3"
+                "oculto";
+            gap: 5rem;
+        }
+
+        @include mobile {
+            grid-template-areas: "btn1"
+                "btn2"
+                "btn3"
+                "oculto";
+            gap: 5rem;
+        }
+
+        &__1 {
+            grid-area: btn1;
+            display: flex;
+            width: 20rem;
+            height: 8rem;
+            background-color: #003144;
+            color: $blanco;
+            font-weight: $black;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                color: $blanco;
+                font-weight: $black;
+                background-color: #003144;
+                border: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__2 {
+            grid-area: btn2;
+            display: flex;
+            width: 20rem;
+            height: 8rem;
+            background-color: #71959B;
+            color: $blanco;
+            font-weight: $black;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            input {
+                color: $blanco;
+                font-weight: $black;
+                background-color: #71959B;
+                border: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__3 {
+            grid-area: btn3;
+            display: flex;
+            width: 20rem;
+            height: 8rem;
+            background-color: #C60C30;
+            color: $blanco;
+            font-weight: $black;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            input {
+                color: $blanco;
+                font-weight: $black;
+                background-color: #C60C30;
+                border: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__box {
+            grid-area: oculto;
+            display: grid;
+            width: 100%;
+            grid-template-areas:
+                "p p p p"
+                ". btn4 btn5 .";
+            grid-template-columns: 1fr 2fr 2fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            margin: 5rem 0rem;
+            padding: 5rem 2rem;
+            background-color: $blanco;
+
+            transition: margin-bottom .5s ease-in-out;
+
+            @include tablet {
+                grid-template-areas: "p"
+                    "btn4"
+                    "btn5";
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            @include mobile {
+                grid-template-areas: "p"
+                    "btn4"
+                    "btn5";
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            p {
+                grid-area: p;
+                font-size: 2.5rem;
+                font-weight: $bold;
+            }
+
+            &__transferencia {
+                grid-area: btn4;
+                position: relative;
+                left: 80px;
+                height: 105px;
+                width: 165px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                @include tablet {
+                    left: 115px;
+                }
+
+                @include mobile {
+                    left: 30px;
+                }
+            }
+
+            &__modal {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.8);
+                z-index: 99999;
+                opacity: 0;
+                -webkit-transition: opacity 400ms ease-in;
+                -moz-transition: opacity 400ms ease-in;
+                transition: opacity 400ms ease-in;
+                pointer-events: none;
+
+                &__texto {
+                    display: flex;
+                    flex-direction: column;
+                    width: 75vw;
+                    height: 45%;
+                    position: absolute;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+
+                    &__close {
+                        background: $blanco;
+                        color: $negro;
+                        line-height: 12px;
+                        position: absolute;
+                        right: 15px;
+                        text-align: center;
+                        top: 15px;
+                        width: 16px;
+                        text-decoration: none;
+                        font-size: xx-small;
+                        font-weight: $bold;
+                        border-radius: 20px;
+                        border: 2px solid $negro;
+                    }
+
+                    &__logo {
+                        height: 54px;
+                        width: 40px;
+                    }
+
+                    p {
+                        font-size: smaller;
+                        font-weight: $bold;
+                    }
+                }
+            }
+
+            &__modal:target {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            &__modal>div {
+                width: 500px;
+                position: relative;
+                margin: 10% auto;
+                background: $blanco;
+
+                @include tablet {
+                    position: relative;
+                    width: 95%;
+                    right: 6px;
+                }
+
+                @include mobile {
+                    position: relative;
+                    width: 95%;
+                    right: 6px;
+                }
+            }
+
+            &__mercado {
+                grid-area: btn5;
+                position: relative;
+                left: 50px;
+                height: 85px;
+                width: 165px;
+
+                @include tablet {
+                    left: 115px;
+                }
+
+                @include mobile {
+                    left: 30px;
+                }
+            }
+        }
+    }
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+.oculto {
+    margin-bottom: -100%;
+}
+
